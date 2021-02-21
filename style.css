@@ -37,7 +37,7 @@ body {
 }
 
 .info-wrapper {
-  padding: 1em 0;
+  /* padding: 1em 0; */
   margin-bottom: 1em;
   display: flex;
   /* align-items: center; */
@@ -61,7 +61,7 @@ a:hover {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.95)
+      rgba(0, 0, 0, 0.9)
     ),
     url('img/code.jpg');
   background-repeat: cover;
@@ -75,14 +75,14 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
-.adv h2 {
+/* .adv h2 {
   color: var(--pimary-text-color);
   color: var(--line-color);
   transform: rotate(-10deg);
-}
+} */
 
 .main-header::after {
   display: block;
@@ -91,7 +91,7 @@ a:hover {
   height: 2px;
   /* padding: 5px; */
   background-color: var(--primary-color);
-  margin: 1rem 0;
+  /* margin: 0.2rem 0; */
 }
 
 .my-name {
@@ -139,7 +139,7 @@ a:hover {
   color: var(--pimary-text-color);
   display: flex;
   flex-wrap: wrap;
-  min-height: 40vh;
+  min-height: 60vh;
 }
 .main-dates {
   padding: 1em 3em;
@@ -274,35 +274,38 @@ a:hover {
     width: 65%;
   }
 }
+
 /* Footer */
 .footer {
   color: var(--pimary-text-color);
-  text-align: center;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  /* border-top: 2px solid var(--primary-color); */
-  /* background-color: var(--line-color); */
+  /* text-align: center; */
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--line-color);
 }
 
 .skills-wrapper {
-  /* background-color: var(--line-color); */
-  padding: 2rem;
   color: var(--pimary-text-color);
   display: flex;
-  margin: 3rem 0;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   /* border: 2px solid var(--primary-color); */
 }
-
-.footer p {
-  margin-left: auto;
-  color: var(--primary-color);
-  padding: 1rem;
-}
+/* 
+.demo:not(:first-child) {
+  margin-left: 2.5em;
+} */
 
 .demo {
   display: flex;
+  align-items: center;
+}
+
+.footer p {
+  /* margin-left: auto; */
+  color: var(--primary-color);
+  /* padding: 1rem; */
 }
 
 .demo h3 {
@@ -310,14 +313,14 @@ a:hover {
   letter-spacing: 5px;
   /* font-size: 2rem; */
   text-align: center;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .icons {
   display: flex;
 }
 .icons img {
-  margin: 0.5rem;
+  margin-left: 0.5rem;
   width: 25px;
   height: 25px;
 }
