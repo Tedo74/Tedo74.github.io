@@ -138,7 +138,7 @@ a:hover {
   color: var(--pimary-text-color);
   display: flex;
   flex-wrap: wrap;
-  min-height: 60vh;
+  min-height: 90vh;
 }
 .main-dates {
   padding: 1em 3em;
@@ -165,7 +165,7 @@ a:hover {
 }
 
 .experience h2 {
-  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
   color: var(--pimary-text-color);
 }
 
@@ -276,7 +276,7 @@ a:hover {
 }
 /* Demo site */
 .demo-site {
-  margin-top: 2.5em;
+  margin-top: 4rem;
   padding: 1em;
   text-align: center;
   background-color: var(--line-color);
@@ -307,6 +307,9 @@ a:hover {
   height: auto;
 }
 /* Demo pics */
+.gr-design-wrapper {
+  margin-top: 4rem;
+}
 .gr-design {
   text-align: center;
   margin-top: 4rem;
@@ -335,13 +338,14 @@ a:hover {
 }
 
 .panel h4 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   position: absolute;
   bottom: 20px;
   left: 20px;
   background-color: var(--line-color);
   padding: 10px;
   opacity: 0;
+  transition: all 1s ease-in;
 }
 
 .panel.active {
@@ -369,8 +373,8 @@ a:hover {
 /* Footer */
 .footer {
   color: var(--pimary-text-color);
-  /* text-align: center; */
-  margin-top: 2rem;
+  border: 2px solid var(--line-color);
+  margin-top: 4rem;
   padding: 1.5rem;
   background-color: var(--line-color);
 }
@@ -391,12 +395,12 @@ a:hover {
 .demo {
   display: flex;
   align-items: center;
+  padding: 0.3rem;
 }
 
 .footer p {
-  /* margin-left: auto; */
   color: var(--primary-color);
-  /* padding: 1rem; */
+  padding: 0.3rem;
 }
 
 .demo h3 {
@@ -419,6 +423,10 @@ a:hover {
 @media (max-width: 1024px) {
   body {
     font-size: 0.8rem;
+  }
+
+  .skills-wrapper {
+    flex-direction: column;
   }
 }
 
@@ -455,10 +463,6 @@ a:hover {
   }
   .panel h4 {
     font-size: 0.8rem;
-  }
-
-  .skills-wrapper {
-    flex-direction: column;
   }
 
   .demo {
