@@ -6,3 +6,11 @@ li.forEach((el) =>
     infoToShow.classList.toggle('show-detail');
   })
 );
+
+const panel = document.querySelectorAll('.panel');
+panel.forEach((p) => {
+  p.addEventListener('click', () => {
+    panel.forEach((p) => p.classList.remove('active'));
+    p.classList.add('active');
+  });
+});
