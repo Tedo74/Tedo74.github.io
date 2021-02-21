@@ -156,8 +156,12 @@ a:hover {
   cursor: pointer;
 }
 
-.experience-details:not(:first-child) {
+.experience-details {
   display: none;
+}
+
+.experience-details.show-detail {
+  display: block;
 }
 
 .experience h2 {
@@ -248,6 +252,7 @@ a:hover {
   background-color: var(--pimary-text-color);
   position: relative;
 }
+
 .scale-line--js::before {
   content: '';
   display: block;
@@ -274,13 +279,15 @@ a:hover {
   color: var(--pimary-text-color);
   text-align: center;
   padding: 1rem;
+  display: flex;
+  align-items: center;
   /* border-top: 2px solid var(--primary-color); */
   /* background-color: var(--line-color); */
 }
 
 .skills-wrapper {
   /* background-color: var(--line-color); */
-  padding: 2rem 0;
+  padding: 2rem;
   color: var(--pimary-text-color);
   display: flex;
   margin: 3rem 0;
@@ -289,6 +296,7 @@ a:hover {
 }
 
 .footer p {
+  margin-left: auto;
   color: var(--primary-color);
   padding: 1rem;
 }
@@ -297,7 +305,7 @@ a:hover {
   display: flex;
 }
 
-.demo h2 {
+.demo h3 {
   /* font-family: 'Beth Ellen', cursive; */
   letter-spacing: 5px;
   /* font-size: 2rem; */
@@ -307,11 +315,9 @@ a:hover {
 
 .icons {
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
 }
 .icons img {
   margin: 0.5rem;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
