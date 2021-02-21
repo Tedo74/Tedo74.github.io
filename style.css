@@ -192,7 +192,7 @@ a:hover {
 .scale-line--html::before {
   content: '';
   display: block;
-  width: 90%;
+  width: 0%;
   height: 15px;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -201,6 +201,15 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 1;
+  animation: line3 2s forwards ease-in-out;
+}
+@keyframes line3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
 }
 .scale-line--css {
   width: 80%;
@@ -212,7 +221,7 @@ a:hover {
 .scale-line--css::before {
   content: '';
   display: block;
-  width: 75%;
+  width: 0;
   height: 15px;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -220,7 +229,18 @@ a:hover {
   /* border-right: 2px solid var(--secondary-color); */
   top: 0;
   left: 0;
+  animation: line 2s forwards ease-in-out 0.5s;
 }
+
+@keyframes line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
 .scale-line--js {
   width: 80%;
   height: 15px;
@@ -231,7 +251,7 @@ a:hover {
 .scale-line--js::before {
   content: '';
   display: block;
-  width: 65%;
+  width: 0;
   height: 15px;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -239,6 +259,15 @@ a:hover {
   /* border-right: 2px solid var(--secondary-color); */
   top: 0;
   left: 0;
+  animation: line2 2s forwards ease-in-out 1s;
+}
+@keyframes line2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
 }
 /* Footer */
 .footer {
