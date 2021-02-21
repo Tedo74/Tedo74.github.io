@@ -138,7 +138,7 @@ a:hover {
   color: var(--pimary-text-color);
   display: flex;
   flex-wrap: wrap;
-  min-height: 90vh;
+  /* min-height: 80vh; */
 }
 .main-dates {
   padding: 1em 3em;
@@ -337,7 +337,8 @@ a:hover {
   transition: all 0.7s ease-in;
 }
 
-.panel h4 {
+.panel h4,
+.panel a {
   font-size: 1rem;
   position: absolute;
   bottom: 20px;
@@ -353,7 +354,8 @@ a:hover {
   opacity: 0.8;
 }
 
-.panel.active h4 {
+.panel.active h4,
+.panel.active a {
   opacity: 1;
 }
 
