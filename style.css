@@ -428,6 +428,11 @@ a:hover {
   .skills-wrapper {
     flex-direction: column;
   }
+  .scale-line--js,
+  .scale-line--css,
+  .scale-line--html {
+    width: 72%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -467,5 +472,13 @@ a:hover {
 
   .demo {
     padding-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  .scale-line--js,
+  .scale-line--css,
+  .scale-line--html {
+    width: 68%;
   }
 }
