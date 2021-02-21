@@ -60,10 +60,11 @@ a:hover {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.94) 50%,
+      rgba(0, 0, 0, 0.8) 100%
     ),
     url('img/code.jpg');
-  background-repeat: cover;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -482,5 +483,17 @@ a:hover {
   .scale-line--css,
   .scale-line--html {
     width: 68%;
+  }
+  .main-header {
+    margin-bottom: 1rem;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.96) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url('img/code.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
