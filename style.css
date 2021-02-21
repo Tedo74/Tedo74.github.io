@@ -333,7 +333,7 @@ a:hover {
   flex: 0.4;
   margin: 1em;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.5;
   transition: all 0.7s ease-in;
 }
 
