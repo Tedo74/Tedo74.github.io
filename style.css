@@ -331,18 +331,19 @@ a:hover {
 }
 
 .panel {
+  box-shadow: 5px 0px 5px var(--line-color), -5px 0px 5px var(--line-color),
+    0px 5px 5px var(--line-color), 0px -5px 5px var(--line-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
-  border: 2px solid var(--pimary-text-color);
   height: 300px;
   color: var(--primary-color);
   cursor: pointer;
   flex: 0.4;
   margin: 1em;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.3;
   transition: all 0.7s ease-in;
 }
 
@@ -359,6 +360,7 @@ a:hover {
 }
 
 .panel.active {
+  border: 3px solid var(--pimary-text-color);
   flex: 1.5;
   opacity: 0.8;
 }
