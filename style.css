@@ -155,14 +155,23 @@ a:hover {
   );
 }
 
+.main-dates h2 {
+  letter-spacing: 1px;
+  text-shadow: -2px 2px 3px rgb(58, 58, 58);
+}
+
 .experience ul {
   list-style-type: none;
-  padding: 1em;
+  padding-bottom: 1em;
 }
 
 .experience ul > li {
-  padding-bottom: 1em;
+  /* padding: 0.5rem; */
   cursor: pointer;
+}
+
+.exp-dates h3 {
+  margin-top: 0.8rem;
 }
 
 .experience-details {
@@ -170,6 +179,7 @@ a:hover {
 }
 
 .experience-details.show-detail {
+  padding-left: 0.4rem;
   display: block;
 }
 
