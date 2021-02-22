@@ -308,7 +308,18 @@ a:hover {
   font-size: 1.4em;
 }
 .demo-site-add-info {
-  display: none;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.demo-site-add-info p {
+  padding: 0 0.3rem;
+}
+.demo-site-add-info p > span {
+  font-weight: bold;
+  padding-left: 0.1rem;
 }
 
 .demo-site-img img {
@@ -511,5 +522,9 @@ a:hover {
       url('img/code.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+  .demo h3 {
+    letter-spacing: normal;
+    font-size: 0.7rem;
   }
 }
