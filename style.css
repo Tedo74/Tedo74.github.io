@@ -331,6 +331,7 @@ a:hover {
 }
 
 .panel {
+  border: 2px solid var(--pimary-text-color);
   box-shadow: 5px 0px 5px var(--line-color), -5px 0px 5px var(--line-color),
     0px 5px 5px var(--line-color), 0px -5px 5px var(--line-color);
   background-size: cover;
@@ -343,7 +344,7 @@ a:hover {
   flex: 0.4;
   margin: 1em;
   position: relative;
-  opacity: 0.3;
+  opacity: 0.4;
   transition: all 0.7s ease-in;
 }
 
