@@ -194,13 +194,19 @@ a:hover {
   text-align: center;
 }
 
+.details h2 {
+  margin-bottom: 0.5em;
+}
+
 .scale-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.3em;
 }
 .scale-item h5 {
-  padding: 0.5em;
+  margin-left: auto;
+  padding-right: 0.8em;
 }
 
 .scale-line--html {
@@ -476,6 +482,9 @@ a:hover {
   .scale-line--html {
     width: 72%;
   }
+  .scale-item h5 {
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -512,6 +521,9 @@ a:hover {
   .demo {
     padding-bottom: 0.5em;
   }
+  .scale-item {
+    width: 80%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -519,6 +531,13 @@ a:hover {
   .scale-line--css,
   .scale-line--html {
     width: 68%;
+  }
+
+  .scale-item {
+    padding-top: 0.4em;
+  }
+  .scale-item h5 {
+    font-size: 0.5rem;
   }
   .main-header {
     margin-bottom: 1rem;
