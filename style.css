@@ -217,6 +217,8 @@ a:hover {
   background-color: var(--line-color);
 }
 .scale-line--html::before {
+  border: 1px solid var(--line-color);
+  /* border-right: 3px solid var(--secondary-color); */
   content: '';
   display: block;
   width: 0%;
@@ -224,7 +226,6 @@ a:hover {
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
   background-color: var(--pimary-text-color);
-  /* border-right: 2px solid var(--secondary-color); */
   top: 0;
   left: 0;
   z-index: 1;
@@ -246,6 +247,7 @@ a:hover {
   position: relative;
 }
 .scale-line--css::before {
+  border: 1px solid var(--line-color);
   content: '';
   display: block;
   width: 0;
@@ -277,6 +279,7 @@ a:hover {
 }
 
 .scale-line--js::before {
+  border: 1px solid var(--line-color);
   content: '';
   display: block;
   width: 0;
@@ -409,7 +412,7 @@ a:hover {
 }
 
 .star.star-fill {
-  background-color: var(--pimary-text-color);
+  background-color: var(--primary-color);
 }
 
 /* Footer */
