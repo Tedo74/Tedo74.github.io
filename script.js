@@ -2,8 +2,21 @@ const li = document.querySelectorAll('.exp-dates');
 
 li.forEach((el) =>
   el.addEventListener('click', () => {
-    infoToShow = el.querySelector('.experience-details');
-    infoToShow.classList.toggle('show-detail');
+    let infoToShow = el.querySelector('.experience-details');
+    if (infoToShow.classList.contains('show-detail')) {
+      li.forEach((elm) => {
+        elm
+          .querySelector('.experience-details')
+          .classList.remove('show-detail');
+      });
+    } else {
+      li.forEach((elm) => {
+        elm
+          .querySelector('.experience-details')
+          .classList.remove('show-detail');
+      });
+      infoToShow.classList.add('show-detail');
+    }
   })
 );
 
