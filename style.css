@@ -177,6 +177,10 @@ a:hover {
 .experience-details {
   display: none;
 }
+.experience-details h4 {
+  margin: 0.3em 0;
+  font-size: 1.2em;
+}
 
 .experience-details.show-detail {
   padding-left: 0.4rem;
@@ -189,6 +193,12 @@ a:hover {
 }
 .data {
   color: var(--primary-color);
+}
+
+p.data {
+  margin-bottom: 0.4em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--pimary-text-color);
 }
 
 .details {
