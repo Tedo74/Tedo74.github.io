@@ -337,81 +337,6 @@ a:hover {
   padding-left: 0.1rem;
 }
 
-.demo-site-img img {
-  width: 200px;
-  height: auto;
-}
-/* Demo pics */
-/* .gr-design-wrapper {
-  margin-top: 4rem;
-}
-.gr-design {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.demo-pics {
-  height: 300px;
-  display: flex;
-}
-
-.panel {
-  border: 2px solid var(--pimary-text-color);
-  box-shadow: 5px 0px 5px var(--line-color), -5px 0px 5px var(--line-color),
-    0px 5px 5px var(--line-color), 0px -5px 5px var(--line-color);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  height: 300px;
-  color: var(--primary-color);
-  cursor: pointer;
-  flex: 0.4;
-  margin: 1em;
-  position: relative;
-  opacity: 0.4;
-  transition: all 0.7s ease-in;
-}
-
-.panel h4,
-.panel a {
-  font-size: 1rem;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: var(--line-color);
-  padding: 10px;
-  opacity: 0;
-  transition: all 1s ease-in;
-}
-
-.panel.active {
-  border: 3px solid var(--pimary-text-color);
-  flex: 1.5;
-  opacity: 0.8;
-}
-
-.panel.active h4,
-.panel.active a {
-  opacity: 1;
-} */
-/* 
-.panel.item1 {
-  background-image: url('img/terminatorT2.jpg');
-}
-.panel.item2 {
-  background-image: url('/img/bike3.jpg');
-}
-.panel.item3 {
-  background-image: url('img/totem.jpg');
-}
-.panel.item4 {
-  background-image: url('img/mousy1.jpg');
-} */
-/* .panel.item5 {
-  background-image: url('img/Ps1.jpg');
-} */
-
 .skills-wrapper {
   margin-top: 3rem;
   padding: 0 2rem;
@@ -448,7 +373,7 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 0.5em;
-  width: 250px;
+  /* width: 250px; */
 }
 .prog {
   margin-right: auto;
@@ -457,12 +382,12 @@ a:hover {
 .all-stars {
   display: flex;
 }
-.icons img {
+/* .icons img {
   opacity: 0.8;
   margin: 0.5rem;
   width: 25px;
   height: 25px;
-}
+} */
 
 .star {
   background-color: var(--line-color);
@@ -603,5 +528,20 @@ a:hover {
     /* margin-left: 0.5rem; */
     width: 20px;
     height: 20px;
+  }
+
+  .star {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 200px) {
+  .skills-wrapper {
+    padding: 0 0.2rem;
+  }
+  .star {
+    width: 12px;
+    height: 12px;
   }
 }
