@@ -156,6 +156,7 @@ a:hover {
 }
 
 .main-dates h2 {
+  opacity: 0.5;
   text-shadow: -2px 2px 3px rgb(19, 19, 19);
 }
 
@@ -195,6 +196,7 @@ a:hover {
 }
 
 .details h2 {
+  opacity: 0.5;
   margin-bottom: 0.5em;
 }
 
@@ -362,6 +364,7 @@ a:hover {
   justify-content: center;
 }
 .demo h3 {
+  opacity: 0.5;
   font-size: 1.2rem;
   padding: 0.5rem;
 }
@@ -421,7 +424,7 @@ a:hover {
     background-color: var(--line-color);
   }
   to {
-    background-color: var(--primary-color);
+    background-color: var(--pimary-text-color);
   }
 }
 .star.star-fill.angular:nth-of-type(2) {
@@ -453,7 +456,7 @@ a:hover {
 }
 
 .footer p {
-  color: var(--primary-color);
+  color: var(--pimary-text-color);
   text-align: center;
   padding: 0.3rem;
 }
