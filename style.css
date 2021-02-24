@@ -411,8 +411,30 @@ a:hover {
   );
 }
 
-.star.star-fill {
-  background-color: var(--primary-color);
+.star.star-fill:nth-of-type(1) {
+  /* background-color: var(--primary-color); */
+  animation: fill-star 1s forwards ease-in-out 2s;
+}
+
+@keyframes fill-star {
+  from {
+    background-color: var(--line-color);
+  }
+  to {
+    background-color: var(--primary-color);
+  }
+}
+.star.star-fill.angular:nth-of-type(2) {
+  animation: fill-star 1s forwards ease-in-out 2.5s;
+}
+.star.star-fill.angular:nth-of-type(3) {
+  animation: fill-star 1s forwards ease-in-out 3s;
+}
+.star.star-fill.vue:nth-of-type(1) {
+  animation: fill-star 1s forwards ease-in-out 3.5s;
+}
+.star.star-fill.vue:nth-of-type(2) {
+  animation: fill-star 1s forwards ease-in-out 4s;
 }
 
 /* Footer */
