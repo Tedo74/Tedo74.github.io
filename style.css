@@ -413,7 +413,7 @@ a:hover {
 } */
 
 .skills-wrapper {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 0 2rem;
   color: var(--pimary-text-color);
   display: flex;
@@ -427,7 +427,12 @@ a:hover {
   align-items: flex-start;
   padding: 1rem;
 }
-
+.demo-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .demo h3 {
   font-size: 1.2rem;
   padding: 0.5rem;
