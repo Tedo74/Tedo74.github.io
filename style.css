@@ -187,6 +187,9 @@ a:hover {
   margin-top: 1.2rem;
   color: var(--pimary-text-color);
 }
+.data {
+  color: var(--primary-color);
+}
 
 .details {
   padding: 1em 3em;
@@ -492,6 +495,7 @@ a:hover {
 
   .main-dates {
     margin: 0 auto;
+    width: 90%;
     border: none;
     flex-grow: 1;
   }
