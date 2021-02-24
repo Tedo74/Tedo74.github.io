@@ -429,10 +429,13 @@ a:hover {
 }
 
 .skills-wrapper {
+  margin-top: 3rem;
+  padding: 2rem;
   color: var(--pimary-text-color);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   /* border: 2px solid var(--primary-color); */
 }
@@ -444,11 +447,14 @@ a:hover {
 .demo {
   display: flex;
   align-items: center;
-  padding: 0.3rem;
+  padding: 1rem;
+  /* width: 25rem; */
+  justify-content: center;
 }
 
 .footer p {
   /* color: var(--primary-color); */
+  text-align: right;
   padding: 0.3rem;
 }
 
@@ -456,7 +462,7 @@ a:hover {
   /* font-family: 'Beth Ellen', cursive; */
   letter-spacing: 5px;
   /* font-size: 2rem; */
-  text-align: center;
+  /* text-align: center; */
   padding: 0 0.5rem;
 }
 
