@@ -356,7 +356,7 @@ p.data {
 }
 
 .skills-wrapper {
-  margin-top: 2rem;
+  margin: 3rem 0 2rem 0;
   padding: 0 2rem;
   color: var(--pimary-text-color);
   display: flex;
@@ -437,7 +437,7 @@ p.data {
     background-color: var(--line-color);
   }
   to {
-    background-color: var(--pimary-text-color);
+    background-color: var(--primary-color);
   }
 }
 .star.star-fill.angular:nth-of-type(2) {
@@ -503,6 +503,7 @@ p.data {
   }
 
   .main-dates {
+    order: 2;
     margin: 0 auto;
     width: 90%;
     border: none;
@@ -560,6 +561,10 @@ p.data {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+  .demo-site {
+    margin-top: 2rem;
+  }
+
   .demo h3 {
     letter-spacing: normal;
     font-size: 0.7rem;
