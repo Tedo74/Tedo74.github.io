@@ -4,8 +4,8 @@
 
 :root {
   --background-color: #000000;
-  --primary-color: #faf094;
-  --secondary-color: #bd5c0d;
+  --primary-color: #4f93b3;
+  --secondary-color: #aaaaaa;
   --pimary-text-color: #d8d8d8;
   --line-color: #2d2d2d;
 }
@@ -240,7 +240,7 @@ p.data {
   height: 15px;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
-  background-color: var(--pimary-text-color);
+  background-color: var(--secondary-color);
   top: 0;
   left: 0;
   z-index: 1;
@@ -269,7 +269,7 @@ p.data {
   height: 15px;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
-  background-color: var(--pimary-text-color);
+  background-color: var(--secondary-color);
   /* border-right: 2px solid var(--secondary-color); */
   top: 0;
   left: 0;
@@ -301,7 +301,7 @@ p.data {
   height: 15px;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
-  background-color: var(--pimary-text-color);
+  background-color: var(--secondary-color);
   /* border-right: 2px solid var(--secondary-color); */
   top: 0;
   left: 0;
