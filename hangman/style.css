@@ -102,6 +102,7 @@ h1 {
 @media (max-width: 1024px) {
   .keyboard {
     opacity: 1;
+    max-width: 100px;
   }
   .keyboard :focus {
     background-color: brown;
@@ -111,11 +112,19 @@ h1 {
   html {
     font: 0.6em;
   }
+
+  h1 {
+    font-size: 1em;
+  }
   h2.guess {
     font-size: 0.6em;
   }
   .word {
     margin: 0;
+  }
+  .game-draw {
+    max-width: 100px;
+    min-width: 80px;
   }
 
   .wrong-letters span {
