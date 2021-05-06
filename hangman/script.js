@@ -5,7 +5,6 @@ const popup = document.querySelector('.popup-container');
 const message = document.getElementById('message');
 const playAgain = document.querySelector('.play');
 const keyboard = document.getElementById('keyboard');
-console.log(window.innerWidth);
 
 playAgain.addEventListener('click', startNewGame);
 
@@ -57,10 +56,11 @@ window.addEventListener('keyup', (evt) => {
       return;
     }
     str = keyboard.value.toLowerCase();
+    str = str[str.length - 1];
   } else {
     str = evt.key;
   }
-  keyboard.value = '';
+  document.getElementById('keyboard').value = '';
   if (!remainingLetters.has(str)) {
     wrongCounter++;
     let span = document.createElement('span');
