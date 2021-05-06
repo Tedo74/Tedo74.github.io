@@ -100,7 +100,7 @@ h1 {
   opacity: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   html {
     font: 0.6em;
   }
@@ -114,7 +114,8 @@ h1 {
   .wrong-letters span {
     font-size: 1em;
   }
-  .keyboard {
-    opacity: 0;
+  .keyboard:focus {
+    opacity: 1;
+    background-color: brown;
   }
 }
