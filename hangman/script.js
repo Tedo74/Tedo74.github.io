@@ -101,3 +101,7 @@ function startNewGame() {
   tempArr = workArr.slice(1, workArr.length - 1);
   remainingLetters = new Set(tempArr);
 }
+
+window.onload = function () {
+  document.getElementById('keyboard').focus();
+};
