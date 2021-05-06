@@ -52,16 +52,15 @@ window.addEventListener('keyup', (evt) => {
   if (wrongCounter > 6) {
     return;
   }
-  if (window.innerWidth < 1024) {
+  if (window.innerWidth <= 1024) {
     if (keyboard.value === '') {
       return;
     }
-    str = keyboard.value;
-    keyboard.value = '';
+    str = keyboard.value.toLowerCase();
   } else {
     str = evt.key;
   }
-
+  keyboard.value = '';
   if (!remainingLetters.has(str)) {
     wrongCounter++;
     let span = document.createElement('span');
