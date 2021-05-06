@@ -114,8 +114,10 @@ h1 {
   .wrong-letters span {
     font-size: 1em;
   }
-  .keyboard:focus {
+  .keyboard {
     opacity: 1;
+  }
+  .keyboard :focus {
     background-color: brown;
   }
 }

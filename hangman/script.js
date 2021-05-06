@@ -4,6 +4,7 @@ const wrong = document.querySelector('.wrong-letters');
 const popup = document.querySelector('.popup-container');
 const message = document.getElementById('message');
 const playAgain = document.querySelector('.play');
+console.log(window.innerWidth);
 
 playAgain.addEventListener('click', startNewGame);
 
@@ -101,7 +102,10 @@ function startNewGame() {
   tempArr = workArr.slice(1, workArr.length - 1);
   remainingLetters = new Set(tempArr);
 }
-
+const keyboard = document.getElementById('keyboard');
+keyboard.addEventListener('keyup', () => {
+  console.log(keyboard.value);
+});
 window.onload = function () {
-  document.getElementById('keyboard').focus();
+  keyboard.focus();
 };
