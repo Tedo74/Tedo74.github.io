@@ -1,0 +1,113 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cecece;
+  color: rgb(32, 19, 3);
+}
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game-draw {
+  flex: 1 1 auto;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.wrong-letters {
+  padding: 2em;
+  margin: 0 1em;
+}
+.wrong-letters span {
+  font-size: 2em;
+}
+
+.word {
+  margin: 2em;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+.popup-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+}
+.popup {
+  margin-top: 5em;
+  width: 200px;
+  background-color: rgb(66, 35, 20);
+  color: #ffffff;
+  padding: 2em;
+  border-radius: 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn {
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.6em;
+  font-size: 1.1em;
+}
+
+.btn.play:active {
+  outline: 0;
+  transform: scale(0.98);
+}
+.btn.play:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(66, 35, 20);
+}
+
+#head,
+#torso,
+#leg-left,
+#leg-right,
+#left-arm,
+#right-arm {
+  opacity: 0;
+}
+
+@media (max-width: 400px) {
+  html {
+    font: 0.6em;
+  }
+  h2.guess {
+    font-size: 0.6em;
+  }
+  .word {
+    margin: 0;
+  }
+
+  .wrong-letters span {
+    font-size: 1em;
+  }
+}
