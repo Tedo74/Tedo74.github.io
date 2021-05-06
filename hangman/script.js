@@ -5,6 +5,8 @@ const popup = document.querySelector('.popup-container');
 const message = document.getElementById('message');
 const playAgain = document.querySelector('.play');
 const keyboard = document.getElementById('keyboard');
+let v = document.getElementById('anim');
+let v2 = document.getElementById('anim2');
 
 playAgain.addEventListener('click', startNewGame);
 
@@ -62,6 +64,10 @@ window.addEventListener('keyup', (evt) => {
   }
   document.getElementById('keyboard').value = '';
   if (!remainingLetters.has(str)) {
+    v.beginElement();
+    setTimeout(() => {
+      v2.beginElement();
+    }, 3000);
     wrongCounter++;
     let span = document.createElement('span');
     span.textContent = str + ', ';
