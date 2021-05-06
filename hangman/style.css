@@ -131,10 +131,7 @@ h1 {
     min-width: 80px;
   }
   .wrong-letters {
-    position: relative;
-    top: -9px;
-    left: 0;
-    padding: 0;
+    padding: 0.1em;
     margin: 0;
   }
   .wrong-letters h3 {
