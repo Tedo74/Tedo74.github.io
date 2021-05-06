@@ -115,20 +115,37 @@ h1 {
   }
 
   h1 {
-    font-size: 1em;
+    font-size: 0.8em;
+    margin: 0;
   }
   h2.guess {
-    font-size: 0.6em;
+    font-size: 0.5em;
+    margin: 0;
+    text-align: center;
   }
   .word {
     margin: 0;
   }
   .game-draw {
-    max-width: 100px;
+    max-width: 81px;
     min-width: 80px;
   }
-
+  .wrong-letters {
+    position: relative;
+    top: -9px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .wrong-letters h3 {
+    font-size: 0.8em;
+    padding: 0.2em 0.4em;
+    margin: 0;
+  }
   .wrong-letters span {
-    font-size: 1em;
+    font-size: 0.7em;
+  }
+  .keyboard {
+    height: 10px;
   }
 }
