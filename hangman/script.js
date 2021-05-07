@@ -127,6 +127,7 @@ function winCheck() {
 }
 
 function startNewGame() {
+  keyboard.value = '';
   stopGame = false;
   wrongCounter = 0;
   message.textContent = '';
