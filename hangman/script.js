@@ -76,6 +76,7 @@ let stopGame = false;
 window.addEventListener('keyup', (evt) => {
   let str;
   if (wrongCounter > 6 || stopGame) {
+    keyboard.value = '';
     return;
   }
   if (window.innerWidth <= 1024) {
@@ -118,6 +119,7 @@ window.addEventListener('keyup', (evt) => {
 
 function gameEndCheck() {
   if (wrongCounter === 6) {
+    keyboard.disabled = true;
     message.textContent = 'Game Over';
     popup.style.display = 'flex';
     stopGame = true;
@@ -126,6 +128,7 @@ function gameEndCheck() {
 }
 function winCheck() {
   if (!showArr.includes('-')) {
+    keyboard.disabled = true;
     message.textContent = 'You Win!';
     popup.style.display = 'flex';
     stopGame = true;
@@ -133,6 +136,7 @@ function winCheck() {
 }
 
 function startNewGame() {
+  keyboard.disabled = false;
   keyboard.value = '';
   stopGame = false;
   wrongCounter = 0;

@@ -71,10 +71,28 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-/* .reload:hover,
-.reload:active {
-  transform: scale(1.2);
-} */
+.reload:hover #arrow-top,
+.reload:active #arrow-top {
+  fill: #01250d;
+}
+.reload:hover #arrow-down,
+.reload:active #arrow-down {
+  fill: #991700;
+}
+.reload:hover #next,
+.reload:active #next {
+  fill: #1f0101;
+  /* stroke: rgb(0, 0, 0);
+  stroke-width: 1px; */
+}
+
+#arrow-top,
+#arrow-down {
+  fill: #280b0b;
+}
+#next {
+  fill: #280b0b;
+}
 
 .popup-container {
   position: fixed;
