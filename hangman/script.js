@@ -16,6 +16,7 @@ reload.addEventListener('mouseenter', (evt) => {
 });
 reload.addEventListener('mouseleave', (evt) => {
   evt.target.style.transform = 'scale(1)';
+  keyboard.focus();
 });
 
 const capitals = [
