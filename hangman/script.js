@@ -67,7 +67,7 @@ window.addEventListener('keyup', (evt) => {
     v.beginElement();
     setTimeout(() => {
       v2.beginElement();
-    }, 3000);
+    }, 1800);
     wrongCounter++;
     let span = document.createElement('span');
     span.textContent = str + ', ';
