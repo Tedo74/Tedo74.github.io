@@ -65,33 +65,31 @@ h1 {
 }
 .reload {
   cursor: pointer;
-  padding: 0.2em 0.5em;
-  width: 40px;
-  height: auto;
-  transition: all 0.3s ease-in-out;
+  padding: 0.2em 0.2em;
+  width: 80px;
+  height: 80px;
+  transition: all 1s ease-in-out;
+}
+/* svg #arrow {
+  transform-origin: 50% 50%;
+} */
+.reload:hover #arrow {
+  transform: rotate(180deg);
+}
+.reload:hover #text {
+  transform: scale(1.1);
+  fill: #110701;
 }
 
-.reload:hover #arrow-top,
-.reload:active #arrow-top {
-  fill: #01250d;
-}
-.reload:hover #arrow-down,
-.reload:active #arrow-down {
-  fill: #991700;
-}
-.reload:hover #next,
-.reload:active #next {
-  fill: #1f0101;
-  /* stroke: rgb(0, 0, 0);
-  stroke-width: 1px; */
+#text {
+  transform-origin: 50% 50%;
+  fill: #2b1100;
 }
 
-#arrow-top,
-#arrow-down {
-  fill: #280b0b;
-}
-#next {
-  fill: #280b0b;
+#arrow {
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+  transition: all 1s ease-in-out;
 }
 
 .popup-container {
@@ -191,10 +189,7 @@ h1 {
     max-width: 81px;
     min-width: 80px;
   }
-  .reload {
-    width: 30px;
-    height: auto;
-  }
+
   .wrong-letters {
     width: 30px;
     padding: 0.2em 0;
