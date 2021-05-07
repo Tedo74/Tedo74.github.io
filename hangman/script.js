@@ -11,6 +11,12 @@ let v2 = document.getElementById('anim2');
 
 playAgain.addEventListener('click', startNewGame);
 reload.addEventListener('click', startNewGame);
+reload.addEventListener('mouseenter', (evt) => {
+  evt.target.style.transform = 'scale(1.3)';
+});
+reload.addEventListener('mouseleave', (evt) => {
+  evt.target.style.transform = 'scale(1)';
+});
 
 const capitals = [
   'Athens',
