@@ -65,10 +65,11 @@ guess.textContent = show;
 let wrongCounter = 0;
 let tempArr = workArr.slice(1, workArr.length - 1);
 let remainingLetters = new Set(tempArr);
+let stopGame = false;
 
 window.addEventListener('keyup', (evt) => {
   let str;
-  if (wrongCounter > 6) {
+  if (wrongCounter > 6 || stopGame) {
     return;
   }
   if (window.innerWidth <= 1024) {
@@ -113,6 +114,7 @@ function gameEndCheck() {
   if (wrongCounter === 6) {
     message.textContent = 'Game Over';
     popup.style.display = 'flex';
+    stopGame = true;
     return true;
   }
 }
@@ -120,10 +122,12 @@ function winCheck() {
   if (!showArr.includes('-')) {
     message.textContent = 'You Win!';
     popup.style.display = 'flex';
+    stopGame = true;
   }
 }
 
 function startNewGame() {
+  stopGame = false;
   wrongCounter = 0;
   message.textContent = '';
   popup.style.display = 'none';

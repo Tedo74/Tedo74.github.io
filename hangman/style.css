@@ -165,6 +165,10 @@ h1 {
   .word {
     margin: 0;
   }
+  .reload {
+    max-width: 30px;
+    height: auto;
+  }
   .game-draw {
     max-width: 81px;
     min-width: 80px;
