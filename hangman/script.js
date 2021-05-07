@@ -4,11 +4,13 @@ const wrong = document.querySelector('.wrong-letters');
 const popup = document.querySelector('.popup-container');
 const message = document.getElementById('message');
 const playAgain = document.querySelector('.play');
+const reload = document.querySelector('.reload');
 const keyboard = document.getElementById('keyboard');
 let v = document.getElementById('anim');
 let v2 = document.getElementById('anim2');
 
 playAgain.addEventListener('click', startNewGame);
+reload.addEventListener('click', startNewGame);
 
 const capitals = [
   'Athens',
