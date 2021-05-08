@@ -15,7 +15,7 @@ reload.addEventListener('click', startNewGame);
 reload.addEventListener(
   'touchmove',
   (evt) => {
-    evt.target.style.transform = 'rotate(-180deg)';
+    evt.target.style.transform = 'rotate(180deg)';
   },
   false
 );
