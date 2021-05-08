@@ -74,7 +74,7 @@ h1 {
   transform-origin: 50% 50%;
 } */
 .reload:hover #arrow {
-  transform: rotateZ(-180deg);
+  transform: rotateZ(180deg);
   fill: #2b1100;
 }
 .reload:hover #text {
