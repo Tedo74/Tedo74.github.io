@@ -12,21 +12,21 @@ let v2 = document.getElementById('anim2');
 playAgain.addEventListener('click', startNewGame);
 reload.addEventListener('click', startNewGame);
 
-reload.addEventListener(
-  'touchmove',
-  (evt) => {
-    evt.target.style.transform = 'rotate(180deg)';
-  },
-  false
-);
-reload.addEventListener(
-  'touchend',
-  (evt) => {
-    evt.target.style.transform = 'rotate(0)';
-    keyboard.focus();
-  },
-  false
-);
+// reload.addEventListener(
+//   'touchmove',
+//   (evt) => {
+//     evt.target.style.transform = 'rotate(180deg)';
+//   },
+//   false
+// );
+// reload.addEventListener(
+//   'touchend',
+//   (evt) => {
+//     evt.target.style.transform = 'rotate(0)';
+//     keyboard.focus();
+//   },
+//   false
+// );
 
 const capitals = [
   'Athens',
