@@ -75,10 +75,13 @@ h1 {
 } */
 .reload:hover #arrow {
   transform: rotateZ(-180deg);
+  fill: #2b1100;
 }
 .reload:hover #text {
   transform: scale(1.1);
-  fill: #110701;
+  fill: none;
+  stroke: none;
+  stroke-width: 0;
 }
 
 #text {
