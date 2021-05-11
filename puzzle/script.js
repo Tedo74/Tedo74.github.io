@@ -27,6 +27,7 @@ class PuzzlePiece {
 
 class Puzzle {
   constructor(domElementId, col, row) {
+    this.touches = [];
     this.col = col;
     this.row = row;
     this.piecesCount = col * row;
@@ -67,6 +68,41 @@ class Puzzle {
   }
 
   setPuzzleDragEvents() {
+    this.elementToAttach.addEventListener(
+      'touchstart',
+      (evt) => {
+        if (this.gameOver) {
+          return;
+        }
+        if (this.touches.length === 0) {
+          this.touches.push(evt.target);
+          evt.target.style.border = '1px solid gainsboro';
+          evt.target.innerText = '1';
+        } else if (
+          this.touches.length === 1 &&
+          evt.target !== this.touches[0]
+        ) {
+          this.touches.push(evt.target);
+          evt.target.innerText = '2';
+          evt.target.style.border = '1px solid gainsboro';
+          setTimeout(() => {
+            this.touches[0].innerText = '';
+            this.touches[1].innerText = '';
+            this.touches[0].style.border = 'none';
+            this.touches[1].style.border = 'none';
+            this.swap(this.touches[0], this.touches[1]);
+            this.compare();
+          }, 400);
+        } else if (this.touches.length > 1) {
+          this.touches = [];
+          this.touches.push(evt.target);
+          evt.target.style.border = '1px solid gainsboro';
+          evt.target.innerText = '1';
+        }
+      },
+      { passive: true }
+    );
+
     this.elementToAttach.addEventListener('dragover', function (evt) {
       evt.preventDefault();
     });
@@ -75,31 +111,29 @@ class Puzzle {
     });
     this.elementToAttach.addEventListener('drop', (evt) => {
       this.piecePassive = evt.target;
-      this.swap();
+      this.swap(this.dragged, this.piecePassive);
       this.compare();
     });
   }
-  swap() {
+  swap(element1, element2) {
     if (this.gameOver) {
       return;
     }
-    console.log();
-    console.log();
 
-    let el1 = this.dragged.innerText;
-    let el2 = this.piecePassive.innerText;
-    this.dragged.innerText = el2;
-    this.piecePassive.innerText = el1;
-    let passiveData = this.piecePassive.getAttribute('data-position');
-    let draggedData = this.dragged.getAttribute('data-position');
-    this.piecePassive.setAttribute('data-position', draggedData);
-    this.dragged.setAttribute('data-position', passiveData);
+    let el1 = element1.innerText;
+    let el2 = element2.innerText;
+    element1.innerText = el2;
+    element2.innerText = el1;
+    let passiveData = element2.getAttribute('data-position');
+    let draggedData = element1.getAttribute('data-position');
+    element2.setAttribute('data-position', draggedData);
+    element1.setAttribute('data-position', passiveData);
 
-    let draggedBgr = this.dragged.style.backgroundPosition;
-    let passiveBgr = this.piecePassive.style.backgroundPosition;
+    let draggedBgr = element1.style.backgroundPosition;
+    let passiveBgr = element2.style.backgroundPosition;
 
-    this.piecePassive.style.backgroundPosition = draggedBgr;
-    this.dragged.style.backgroundPosition = passiveBgr;
+    element2.style.backgroundPosition = draggedBgr;
+    element1.style.backgroundPosition = passiveBgr;
   }
 
   compare() {
