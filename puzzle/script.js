@@ -1,6 +1,7 @@
 class PuzzlePiece {
-  constructor(orderNumber, img) {
-    this.img = img;
+  constructor(orderNumber, imgSrc, imgData) {
+    this.imgData = imgData;
+    this.imgSrc = imgSrc;
     this.orderNumber = orderNumber;
     this.element = this.createElement();
     this.getElement();
@@ -11,11 +12,10 @@ class PuzzlePiece {
     // piece.textContent = this.orderNumber + 1;
     piece.classList.add('puzzle-piece');
     piece.setAttribute('data-position', this.orderNumber);
-
-    piece.style.backgroundImage = "url('img/bee2.jpg')";
     // console.log(this.img);
-    piece.style.backgroundPosition = `-${this.img.x * 100}px -${
-      this.img.y * 100
+    piece.style.backgroundImage = `url("${this.imgSrc}")`;
+    piece.style.backgroundPosition = `-${this.imgData.x * 100}px -${
+      this.imgData.y * 100
     }px`;
     // piece.style.backgroundPosition = 'top left';
     return piece;
@@ -27,6 +27,8 @@ class PuzzlePiece {
 
 class Puzzle {
   constructor(domElementId, col, row) {
+    this.imagesArr = ['img/bee2.jpg', 'img/parrot.jpg', 'img/nature.jpg'];
+    this.img = this.selectImageSrc();
     this.touches = [];
     this.col = col;
     this.row = row;
@@ -42,6 +44,13 @@ class Puzzle {
     this.gameOver = false;
   }
 
+  selectImageSrc() {
+    let src = `${
+      this.imagesArr[Math.floor(Math.random() * this.imagesArr.length)]
+    }`;
+    return src;
+  }
+
   randomize() {
     this.arrPuzzles.sort((a, b) => Math.random() - Math.random());
   }
@@ -53,7 +62,7 @@ class Puzzle {
     let counter = 0;
     for (let y = 0; y < this.row; y++) {
       for (let x = 0; x < this.col; x++) {
-        let el = new PuzzlePiece(counter++, { x: x, y: y });
+        let el = new PuzzlePiece(counter++, this.img, { x: x, y: y });
         this.arrPuzzles.push(el.element);
       }
     }
@@ -160,6 +169,7 @@ const play = document.querySelector('.play').addEventListener('click', () => {
     puzzle.elementToAttach.removeChild(puzzle.elementToAttach.firstChild);
   }
   puzzle.arrPuzzles = [];
+  puzzle.img = puzzle.selectImageSrc();
   puzzle.createPieces();
   puzzle.setPieces();
   puzzle.gameOver = false;
