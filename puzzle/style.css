@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.puzzle-container {
+  margin: 0 auto;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
+  border: 1px solid gainsboro;
+}
+
+.puzzle-piece {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.puzzle-piece:hover {
+  border: 1px solid gainsboro;
+}
+
+.winner {
+  opacity: 0;
+  text-align: center;
+}
+
+.play {
+  display: block;
+  width: 80px;
+  margin: 1em auto;
+}
+
+h2 {
+  text-align: center;
+}
