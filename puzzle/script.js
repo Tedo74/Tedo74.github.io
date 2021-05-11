@@ -27,7 +27,12 @@ class PuzzlePiece {
 
 class Puzzle {
   constructor(domElementId, col, row) {
-    this.imagesArr = ['img/bee2.jpg', 'img/parrot.jpg', 'img/nature.jpg'];
+    this.imagesArr = [
+      'img/bee2.jpg',
+      'img/parrot.jpg',
+      'img/nature.jpg',
+      'img/tree.jpg',
+    ];
     this.img = this.selectImageSrc();
     this.touches = [];
     this.col = col;
