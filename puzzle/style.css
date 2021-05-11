@@ -99,3 +99,25 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 450px) {
+  .winner {
+    font-size: 1em;
+    margin: 1em 0;
+  }
+
+  .icons {
+    height: 40px;
+  }
+  .icons:first-child {
+    width: 50px;
+  }
+  .icons:nth-child(1)::after {
+    font-size: 1em;
+    top: 120%;
+  }
+  .icons:nth-child(2)::after {
+    font-size: 1em;
+    top: 120%;
+  }
+}
