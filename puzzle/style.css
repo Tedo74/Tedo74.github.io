@@ -28,6 +28,8 @@
 }
 
 .winner {
+  margin: 3em 0 1em 0;
+  font-size: 1.3rem;
   opacity: 0;
   text-align: center;
   color: rgb(1, 75, 1);
@@ -35,10 +37,65 @@
 
 .play {
   display: block;
-  width: 80px;
+  width: 110px;
+  padding: 0.5em 1.2em;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  background-color: rgb(1, 75, 1);
+  color: #fff;
   margin: 1em auto;
+}
+.play:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 h2 {
   text-align: center;
+}
+
+.how {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 180px;
+  margin: 1.5em auto;
+}
+
+.icons {
+  height: 70px;
+}
+
+.icons:first-child {
+  background: url('./img/comp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90px;
+  position: relative;
+}
+.icons:first-child::after {
+  position: absolute;
+  content: 'drag';
+  font-size: 1.3em;
+  top: 115%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+}
+.icons:nth-child(2) {
+  background: url('./img/touch.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  position: relative;
+}
+.icons:nth-child(2)::after {
+  position: absolute;
+  content: 'tap';
+  font-size: 1.3em;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
