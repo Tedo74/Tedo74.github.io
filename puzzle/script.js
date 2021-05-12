@@ -32,6 +32,7 @@ class Puzzle {
       'img/parrot.jpg',
       'img/nature.jpg',
       'img/tree.jpg',
+      'img/forest.jpg',
     ];
     this.img = this.selectImageSrc();
     this.touches = [];
