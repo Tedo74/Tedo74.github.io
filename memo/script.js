@@ -14,6 +14,11 @@ function cardClicked(e) {
     return;
   }
   let clicked = e.target.parentNode;
+  console.log(clicked);
+  if (!clicked.getAttribute('data-id')) {
+    return;
+  }
+
   if (openedCards.length === 0 && !clicked.classList.contains('flipped')) {
     clicked.classList.add('flipped');
     openedCards.push(clicked);
