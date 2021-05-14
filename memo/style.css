@@ -48,6 +48,7 @@ body {
 
 .game-over h2 {
   color: #fff;
+  text-align: center;
 }
 
 .card-container {
@@ -135,6 +136,9 @@ body {
 @media (max-width: 370px) {
   .wrapper {
     padding: 0;
+  }
+  .game-message h2 {
+    font-size: 0.8em;
   }
   .card-container {
     min-width: 200px;
