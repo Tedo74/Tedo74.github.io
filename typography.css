@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+/* Reset CSS */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+/* Box sizing */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Typography CSS */
+
+html {
+    font: 16px/1.5 'PT Sans', sans-serif;
+}
+
+body, table, form, input, select, textarea {
+    font: inherit;
+}
+
+p, ul, ol {
+    padding-bottom: 1.2rem;
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+li ul, li ol {
+    padding-top: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Serif', 'Georgia', 'serif';
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.9em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.2em;
+}

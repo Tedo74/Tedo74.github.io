@@ -14,7 +14,6 @@ function cardClicked(e) {
     return;
   }
   let clicked = e.target.parentNode;
-  console.log(clicked);
   if (!clicked.getAttribute('data-id')) {
     return;
   }
