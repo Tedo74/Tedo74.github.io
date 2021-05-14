@@ -6,8 +6,37 @@ let bgr = [
   'img/castle5.jpg',
   'img/castle6.jpg',
 ];
+
 let cardContainer = document.querySelector('.card-container');
 const gameOverComp = document.querySelector('.game-over');
+let message = gameOverComp.querySelector('h2');
+const timerComponent = document.querySelector('.time');
+let startTime = 40;
+timerComponent.textContent = startTime;
+let clock = startTime;
+let timer;
+let gameOver = false;
+let allCards = [];
+let openedCards = [];
+
+function startTimer() {
+  if (gameOver) {
+    return;
+  }
+  timer = setInterval(() => {
+    clock--;
+    if (clock <= 0) {
+      clearInterval(timer);
+      gameOver = true;
+      checkGameOver();
+      timerComponent.textContent = clock;
+      return;
+    }
+
+    timerComponent.textContent = clock;
+  }, 1000);
+}
+startTimer();
 
 function cardClicked(e) {
   if (gameOver) {
@@ -32,6 +61,7 @@ function cardClicked(e) {
     compareCards(...openedCards);
   }
 }
+
 function setCursor(flag = false) {
   let arr = Array.from(cardContainer.children);
   if (flag) {
@@ -40,8 +70,8 @@ function setCursor(flag = false) {
   }
   arr.forEach((el) => (el.style.cursor = 'not-allowed'));
 }
-cardContainer.addEventListener('click', cardClicked);
 
+cardContainer.addEventListener('click', cardClicked);
 cardContainer.addEventListener('touchstart', cardClicked, { passive: true });
 
 function compareCards(card1, card2) {
@@ -67,9 +97,6 @@ function compareCards(card1, card2) {
     }, 1000);
   }
 }
-let gameOver = false;
-let allCards = [];
-let openedCards = [];
 
 function filterCards(id) {
   allCards = allCards.filter((card) => card.getAttribute('data-id') !== id);
@@ -77,8 +104,16 @@ function filterCards(id) {
 
 function checkGameOver() {
   if (allCards.length === 0) {
+    clearInterval(timer);
     gameOver = true;
+    message.textContent = 'Congratulations!';
+    startTime -= 5;
     gameOverComp.style.display = 'block';
+  } else if (gameOver) {
+    message.textContent = 'Game over!';
+    gameOverComp.style.display = 'block';
+    clearInterval(timer);
+    startTime -= 5;
   }
 }
 
@@ -127,4 +162,8 @@ const play = document.querySelector('.play').addEventListener('click', () => {
   gameOver = false;
   cardGenerator(6);
   randomizeCards();
+  timerComponent.textContent = startTime;
+  clock = +timerComponent.textContent;
+  clearInterval(timer);
+  startTimer();
 });
