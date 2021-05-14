@@ -333,7 +333,7 @@ p.data {
 }
 
 .demo-site h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 .demo-site a {
   font-family: 'Beth Ellen', cursive;
@@ -356,7 +356,7 @@ p.data {
 }
 
 .demo-site-item {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .demo-site-item-links {
   display: flex;
