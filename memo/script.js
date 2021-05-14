@@ -107,7 +107,7 @@ function checkGameOver() {
     clearInterval(timer);
     gameOver = true;
     message.textContent = 'Congratulations!';
-    startTime -= 5;
+    startTime += 5;
     gameOverComp.style.display = 'block';
   } else if (gameOver) {
     message.textContent = 'Game over!';
