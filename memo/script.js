@@ -96,7 +96,7 @@ function generateCard(id) {
   front.classList.add('card-front');
   const back = document.createElement('div');
   back.style.backgroundImage = `url(${src})`;
-  back.style.backgroundPosition = 'cover';
+  back.style.backgroundPosition = '50% 50%';
   back.style.backgroundRepeat = 'no-repeat';
   back.classList.add('card-back');
   const backContent = document.createElement('p');
