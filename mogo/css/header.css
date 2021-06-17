@@ -136,7 +136,6 @@ a {
   font-family: Montserrat;
   font-size: 150px;
   position: relative;
-  margin-top: 42px;
   margin-bottom: 124px;
   padding: 0;
 }
@@ -166,6 +165,7 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 42px;
 }
 .button-container {
   margin-top: 3.5em;
@@ -186,7 +186,7 @@ button.header-button {
   transition: opacity 0.2s ease-in;
   border: none;
   outline: none;
-  padding: 5px 2rem;
+  padding: 12px 30px;
   color: #fff;
   border: solid 3px #fff;
   background-color: transparent;
