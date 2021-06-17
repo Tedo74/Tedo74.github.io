@@ -1,0 +1,119 @@
+.note-carousel {
+  margin-top: 120px;
+  height: 290px;
+  background-color: #f8f8f8;
+}
+
+.note-carousel-inner {
+  /* border: 2px solid blue; */
+  height: 100%;
+  /* background-color: blue; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-chevron-left,
+.fa-chevron-right {
+  cursor: pointer;
+  color: #cccccc;
+}
+.fa-chevron-left {
+  margin-right: 60px;
+}
+
+.note-carousel-content {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 70px 20px;
+  justify-content: space-between;
+}
+.note-small-nav {
+  display: flex;
+  align-items: center;
+}
+.small-nav {
+  display: none;
+}
+.note-carousel-svg {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border: solid 3px #95e1d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+.note-text-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+.note-paragraph-container {
+  /* height: 100%; */
+  margin-bottom: 0px;
+}
+.note-carousel-text,
+.slider-carousel-text {
+  /* max-width: 767px; */
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+  color: #999999;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+  /* transform: translateX(-500px); */
+}
+.note-carousel-text-author {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.delimiter {
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-right: 10px;
+}
+
+.note-carousel-text.show-note,
+.slider-carousel-text.show-note {
+  transition: opacity 0.4s linear;
+  opacity: 1;
+  /* transform: translateX(0); */
+}
+
+.note-author,
+.slider-author {
+  /* transform: translateX(500px); */
+  transition: opacity 0.4s linear;
+  opacity: 0;
+}
+.note-author.show-note,
+.slider-author.show-note {
+  /* transform: translateX(0); */
+  transition: opacity 0.4s linear;
+  opacity: 1;
+}
+
+.note-sub {
+  color: #333333;
+  font-weight: 400;
+  padding: 0;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  text-align: center;
+}

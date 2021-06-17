@@ -1,0 +1,113 @@
+@media (max-width: 1250px) {
+  .header {
+    height: 100vh;
+  }
+  .main-menu {
+    display: block;
+  }
+
+  .header-inner-content {
+    padding: 1em;
+  }
+  .main-heading {
+    font-size: 4em;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .main-heading::after {
+    bottom: -46px;
+  }
+  .sub-title {
+    font-size: 1.5em;
+  }
+  .menus-wrapper {
+    position: absolute;
+    top: 80px;
+    left: 16px;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    border: 3px solid var(--primary-color);
+    opacity: 0.9;
+    background-color: var(--blush);
+  }
+  .main-menu li {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform: translateY(-100px);
+  }
+  .main-menu.show-main-nav {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transform: translateY(0);
+    transition: all 0.4s ease-in;
+  }
+  .main-menu.hidde {
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform: translateY(-100px);
+  }
+  .burger-menu {
+    display: block;
+  }
+
+  .main-heading {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  .main-heading::after {
+    bottom: -38px;
+  }
+  .sub-title {
+    font-size: 1em;
+  }
+
+  .shopping-card {
+    margin-left: 0.3em;
+    margin-right: 20px;
+  }
+  .search-shop {
+    margin-left: 15px;
+  }
+
+  .indicator-number {
+    display: none;
+  }
+  .indicator-text {
+    font-size: 10px;
+  }
+  button.header-button {
+    font-size: 10px;
+  }
+  .sub-title {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 350px) {
+  .indicator-number {
+    display: none;
+  }
+  .sub-title {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 300px) {
+  .indicator-tex-wrapper {
+    display: none;
+  }
+}

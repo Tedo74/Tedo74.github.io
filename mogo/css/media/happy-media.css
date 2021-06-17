@@ -1,0 +1,48 @@
+@media (max-width: 1050px) {
+  .happy {
+    height: 1750px;
+  }
+
+  .happy-users-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .happy-card {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+  .user-info-container {
+    max-width: 300px;
+    align-items: center;
+  }
+
+  .user-info-container p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .happy-users-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .happy-card {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+  .user-info-container {
+    max-width: 300px;
+    align-items: center;
+    padding: 0 0.2em;
+  }
+
+  .user-info-container p {
+    text-align: center;
+  }
+}

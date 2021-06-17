@@ -1,0 +1,89 @@
+@media (max-width: 1300px) {
+  .about-counter-item-number {
+    font-size: 32px;
+  }
+  .about-counter-item-text {
+    font-size: 11px;
+  }
+  .about-counter {
+    height: 150px;
+    padding: 0 3em;
+  }
+}
+@media (max-width: 1280px) {
+  .about-image-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .about-card-item {
+    margin: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .about-counter-item,
+  .about-counter-item:first-child {
+    /* color: var(--blush); */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border: none;
+    padding: 0 10px;
+  }
+  .counter-num-wrapper {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    width: 40px;
+    height: 100%;
+  }
+  .about-counter-item-number {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .about-counter {
+    /* background-color: #fff; */
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .about-counter-inner {
+    flex-direction: column;
+  }
+  .super-team-text {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-card-item {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .about p.about-text {
+    margin-bottom: 10px;
+    padding: 1em;
+  }
+
+  .hover-over::before {
+    top: -4px;
+    left: -4px;
+  }
+  .hover-over::after {
+    border-right: 4px solid #95e1d3;
+    border-bottom: 4px solid #95e1d3;
+  }
+  p.super-team-text {
+    font-size: 8px;
+  }
+}

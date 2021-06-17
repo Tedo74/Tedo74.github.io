@@ -1,0 +1,48 @@
+@media (max-width: 800px) {
+  .unique {
+    height: 586px;
+  }
+  .unique-mobile,
+  .unique-mobile-ghost {
+    width: 238px;
+    height: 290px;
+    background-size: cover;
+    background-position: center center;
+    top: 52%;
+  }
+  .unique-phone-over {
+    background-size: cover;
+    background-position: center center;
+    width: 137px;
+    height: 238px;
+    top: 48%;
+  }
+}
+@media (max-width: 400px) {
+  .unique-phone-over {
+    left: 77%;
+  }
+}
+@media (max-width: 300px) {
+  .unique {
+    height: 500px;
+  }
+  .unique-mobile,
+  .unique-mobile-ghost {
+    width: 119px;
+    height: 145px;
+    background-size: cover;
+    background-position: center center;
+    top: 72%;
+  }
+  .unique-phone-over {
+    background-size: cover;
+    background-position: center center;
+    width: 69px;
+    height: 119px;
+    top: 48%;
+  }
+  .unique-phone-over {
+    left: 77%;
+  }
+}

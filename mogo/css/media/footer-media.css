@@ -1,0 +1,117 @@
+@media (max-width: 1250px) {
+  .footer-top {
+    padding: 1em;
+  }
+  .footer-left {
+    margin-right: 20px;
+  }
+
+  .footer-card-text {
+    width: 150px;
+  }
+  .regular-text.footer-left-text {
+    max-width: 300px;
+  }
+  .subscribe {
+    flex-direction: column;
+  }
+  .subscribe input[type='text'] {
+    margin-bottom: 10px;
+  }
+  .footer-card-container {
+    justify-content: flex-start;
+    flex-grow: 0;
+  }
+  .follow-us {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .follow-us p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-right {
+    padding: 1em;
+    background-color: #95e1d3;
+    padding: 1.4em;
+  }
+  .footer-right {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  /* footer left side */
+  .footer-left {
+    margin-right: 0px;
+    padding: 1em;
+    align-items: center;
+  }
+  .regular-text.footer-left-text {
+    text-align: center;
+    max-width: 200px;
+  }
+  .regular-text.footer-left-text {
+    font-size: 13px;
+  }
+  .footer-logo {
+    font-size: 30px;
+  }
+
+  .follow-social i {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .subscribe input[type='text'] {
+    width: 190px;
+  }
+
+  /* footer-center */
+  .footer-center {
+    padding: 1em;
+    align-items: center;
+  }
+  .subscribe {
+    align-items: center;
+  }
+  .follow-us {
+    align-items: center;
+  }
+  .footer-card {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .footer-card-text-container {
+    padding: 20px 0 20px 0;
+    align-items: center;
+  }
+  .footer-card-text {
+    text-align: center;
+  }
+  /* footer right side */
+  .footer-right {
+    align-items: center;
+    background-color: transparent;
+  }
+  .footer-gallery-container {
+    grid-template-columns: repeat(3, 44px);
+    grid-template-rows: repeat(3, 44px);
+  }
+  .footer-gallery-container img {
+    width: 44px;
+    height: 44px;
+  }
+  /* bottom */
+  .footer-rights {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+}

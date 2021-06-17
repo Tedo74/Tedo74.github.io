@@ -1,0 +1,233 @@
+.footer {
+  background-color: #f8f8f8;
+}
+
+.footer-inner {
+  margin: 0 auto;
+}
+
+.footer-top {
+  padding: 74px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* footer left side */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-logo {
+  display: inline;
+  line-height: 0.8;
+  font-family: Montserrat;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: left;
+  color: #cccccc;
+  margin: 0;
+  padding: 0;
+}
+
+.regular-text.footer-left-text {
+  /* width: 464px; */
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  padding: 0;
+  margin-top: 42px;
+  margin-bottom: 49px;
+}
+
+.footer-left-follow-text {
+  padding: 0;
+}
+
+.footer-dark {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.follow-us {
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  align-items: baseline;
+  margin-top: 18px;
+  padding-top: 16px;
+  margin-bottom: 0;
+}
+.follow-us p {
+  margin-right: 20px;
+}
+
+.follow-social {
+  display: flex;
+  color: #95e1d3;
+}
+.follow-social p {
+  margin-right: 20px;
+}
+.follow-social i {
+  margin-right: 15px;
+}
+
+.subscribe {
+  display: flex;
+  margin-top: 37px;
+}
+.subscribe input[type='text'] {
+  padding: 14px;
+  border: solid 1px #e7e7e7;
+  background-color: #ffffff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cccccc;
+  outline: none;
+  height: 40px;
+  width: 230px;
+}
+.subscribe button {
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  text-transform: uppercase;
+  background-color: #95e1d3;
+  padding: 14px 34px;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+/* footer center */
+.footer-center {
+  /* flex: 1; */
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mini-heading.footer-center-heading {
+  /* padding: 0; */
+  display: block;
+  margin: 0;
+  margin-bottom: 40px;
+}
+/* cards */
+.footer-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.footer-card {
+  display: flex;
+  align-items: center;
+}
+
+.footer-card-img {
+  width: 120px;
+  height: 80px;
+  /* background-color: tomato; */
+}
+.footer-card-img.img-item1 {
+  background: url('../assets/footer-center-1.jpg');
+}
+.footer-card-img.img-item2 {
+  background: url('../assets/footer-center-2.jpg');
+}
+.footer-card-img.img-item3 {
+  background: url('../assets/footer-center-3.jpg');
+}
+.footer-card-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 0 20px;
+}
+.footer-card-text {
+  width: 210px;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  color: #333333;
+  text-transform: uppercase;
+  /* margin-bottom: 12px; */
+}
+
+.footer-card-date {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+}
+/* footer right side */
+.footer-right {
+  /* flex: 1; */
+  /* flex-grow: 1; */
+  /* background-color: cyan; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 88px);
+  grid-template-rows: repeat(3, 88px);
+  gap: 2px;
+  margin-bottom: 20px;
+}
+/* footer bottom */
+.footer-bottom {
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-rights {
+  text-align: center;
+  padding: 23px 0;
+}
+
+.site-author {
+  color: var(--blush);
+}
+
+@media (max-size: 1200px) {
+  .footer-left {
+    background-color: #c42727;
+  }
+  .footer-card-text {
+    width: 150px;
+    background-color: blueviolet;
+  }
+}

@@ -1,0 +1,131 @@
+.what-carousel {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 90px;
+}
+.about-text.what-p {
+  margin-bottom: 0;
+}
+
+.what-carousel-img-container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+.acc-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.acc-photo.active {
+  display: block;
+}
+
+.what-carousel-accordion {
+  width: 600px;
+  height: 400px;
+  /* background-color: yellow; */
+}
+
+.what-accordion-header {
+  width: 600px;
+  height: 60px;
+  border: solid 1px #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+.accordion-header-img {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  background-size: cover;
+}
+.accordion-header-img.photo {
+  background: url('../assets/photo.svg');
+}
+.accordion-header-img.create {
+  background: url('../assets/equalizer.svg');
+}
+.accordion-header-img.web {
+  background: url('../assets/bullseye2.svg');
+}
+
+.what-accordion-header h6 {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-weight: normal;
+  text-align: left;
+  font-size: 14px;
+  color: #333333;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  margin: 15px;
+  margin-left: auto;
+  color: #cccccc;
+  /* cursor: pointer; */
+}
+
+.what-accordion-content {
+  border: solid 1px #e5e5e5;
+  height: 180px;
+  overflow: scroll;
+  overflow-x: hidden;
+  cursor: default;
+}
+.what-accordion-content::-webkit-scrollbar {
+  height: 90px;
+  width: 5px;
+}
+.what-accordion-content::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+.what-accordion-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #95e1d3;
+  border-radius: 2.5px;
+}
+
+.accordion-text {
+  padding: 20px 20px 30px 20px;
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.accordion-item .what-accordion-content {
+  display: none;
+}
+
+.accordion-item.active .what-accordion-content {
+  /* margin-bottom: 10px; */
+  display: block;
+}
+
+.accordion-item .fa-chevron-down {
+  display: block;
+}
+.accordion-item.active .fa-chevron-down {
+  display: none;
+}
+
+.accordion-item .fa-chevron-up {
+  display: none;
+}
+.accordion-item.active .fa-chevron-up {
+  display: block;
+}

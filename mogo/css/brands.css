@@ -1,0 +1,52 @@
+.brands {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+  margin-top: 110px;
+}
+
+.inner-brands {
+  margin: 0 auto;
+}
+
+.brand-logo-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  /* border: 1px solid red; */
+  height: 150px;
+  width: 150px;
+}
+
+.logo1 {
+  background: url('../assets/logo1.png');
+  background-size: cover;
+  background-position: center center;
+}
+.logo2 {
+  background: url('../assets/logo2.png');
+  background-size: cover;
+  background-position: center center;
+}
+.logo3 {
+  background: url('../assets/logo3.png');
+  background-size: cover;
+  background-position: center center;
+}
+.logo4 {
+  background: url('../assets/logo4.png');
+  background-size: cover;
+  background-position: center center;
+}
+.logo5 {
+  background: url('../assets/logo5.png');
+  background-size: cover;
+  background-position: center center;
+}
+.logo6 {
+  background: url('../assets/logo6.png');
+  background-size: cover;
+  background-position: center center;
+}

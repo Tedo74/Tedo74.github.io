@@ -1,0 +1,62 @@
+.unique {
+  height: 850px;
+  background-image: url('../assets/unique.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.unique::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+.unique-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.unique-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.unique-mobile,
+.unique-mobile-ghost {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('../assets/unique-phone.png');
+  width: 477px;
+  height: 582px;
+  z-index: 1;
+}
+.unique-mobile-ghost {
+  background: none;
+  /* border: 2px solid blue; */
+  z-index: 3;
+  height: 582px;
+}
+
+.unique-phone-over {
+  position: absolute;
+  background: url('../assets/white.png');
+  width: 274px;
+  height: 476px;
+  top: 34%;
+  left: 105%;
+  transform: translateX(-50%);
+  z-index: 3;
+}

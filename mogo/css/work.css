@@ -1,0 +1,79 @@
+.work-wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* background-color: burlywood; */
+  justify-items: center;
+}
+.work {
+  width: 100%;
+  height: 650px;
+  margin-bottom: 72px;
+}
+/* .work-part1 {
+  border-bottom: 1px solid #e5e5e5;
+}
+.work-part1,
+.work-part2 {
+  display: flex;
+} */
+.item-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* border: darkblue 2px solid; */
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.item-wrapper:nth-child(1),
+.item-wrapper:nth-child(2),
+.item-wrapper:nth-child(3) {
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 20px;
+}
+
+.work-item {
+  /* border: 1px solid blueviolet; */
+  max-width: 370px;
+  display: flex;
+  align-items: flex-start;
+  /* margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 20px; */
+}
+
+.work-item-icon {
+  width: 32px;
+  height: 32px;
+  /* border: 1px solid blue; */
+}
+/* .work-item-icon .item1 {
+  background-image: url('../assets/alarm.svg');
+} */
+
+.work-item-content {
+  padding-left: 30px;
+  width: 368px;
+  /* border: 1px solid blue; */
+}
+.work-item-content h6 {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-weight: normal;
+  text-align: left;
+  padding: 0 0 20px 0;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.work-item-content p {
+  font-family: Roboto;
+  color: #999999;
+  font-size: 15px;
+  text-align: left;
+}

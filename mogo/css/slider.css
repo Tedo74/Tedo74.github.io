@@ -1,0 +1,31 @@
+.slider {
+  padding: 100px 0 130px 0;
+  background-color: var(--primary-color);
+}
+
+.slider-img {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  margin-right: 60px;
+}
+
+.slider-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in, transform 0.4s linear;
+  transform: rotate(-90deg);
+}
+.slider-img img.show-img {
+  opacity: 1;
+  transition: opacity 0.4s ease-in, transform 0.4s linear;
+  transform: rotate(0);
+}
+
+#slider-carousel-left-btn2,
+#slider-carousel-right-btn2 {
+  display: none;
+}
