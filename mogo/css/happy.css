@@ -16,6 +16,9 @@
   background: rgba(255, 255, 255, 0.85);
   z-index: 1;
 }
+.happy .heading-sub {
+  margin-bottom: 16px;
+}
 .happy-inner {
   margin: 0 auto;
   position: absolute;

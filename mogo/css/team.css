@@ -1,3 +1,7 @@
+.team .heading-sub {
+  margin-bottom: 23px;
+}
+
 .team-inner {
   margin: 0 auto;
 }
@@ -111,7 +115,7 @@
 } */
 
 .team-card-text-container {
-  margin-top: 30px;
+  margin-top: 31px;
 }
 
 .team-card-text-container .mini-heading {

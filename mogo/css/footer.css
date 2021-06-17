@@ -215,19 +215,9 @@
 
 .footer-rights {
   text-align: center;
-  padding: 23px 0;
+  padding: 24px 0;
 }
 
 .site-author {
   color: var(--blush);
-}
-
-@media (max-size: 1200px) {
-  .footer-left {
-    background-color: #c42727;
-  }
-  .footer-card-text {
-    width: 150px;
-    background-color: blueviolet;
-  }
 }
