@@ -2,6 +2,7 @@ const accHeader = document.querySelectorAll('.what-accordion-header');
 const accItem = document.querySelectorAll('.accordion-item');
 const accPhotos = document.querySelectorAll('.acc-photo');
 
+// event
 accHeader.forEach((acc) => {
   acc.addEventListener('click', (evt) => {
     const item = evt.target.closest('.accordion-item');
@@ -16,12 +17,14 @@ accHeader.forEach((acc) => {
   });
 });
 
+// remove class active
 function accRemoveActive() {
   accItem.forEach((item) => {
     item.classList.remove('active');
   });
 }
 
+// set image by attribute
 function accSetImage(attr) {
   accPhotos.forEach((photo) => {
     if (photo.getAttribute('data-photo') === attr) {

@@ -3,9 +3,12 @@
     height: 850px;
   }
   .work-wrapper {
+    max-width: 800px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
+  /* borders for items */
   .item-wrapper:nth-child(3) {
     border-bottom: 1px solid #e5e5e5;
     padding-top: 50px;
@@ -26,6 +29,7 @@
     flex-direction: column;
     align-items: center;
   }
+  /* borders for items */
   .item-wrapper:nth-child(3) {
     border-bottom: 1px solid #e5e5e5;
     padding-top: 50px;

@@ -1,6 +1,9 @@
 @media (max-width: 1100px) {
-  .note-carousel {
-    height: 400px;
+  .slider {
+    padding: 50px 0;
+  }
+  .note-text-container.slider-text-container {
+    height: 105px;
   }
   .slider-img {
     width: 80px;
@@ -32,17 +35,9 @@
     padding: 0;
     margin-left: 10px;
   }
-  .slider-container {
-    width: 98%;
-    height: 100px;
-  }
 }
 
 @media (max-width: 400px) {
-  .slider-container {
-    width: 98%;
-    height: 130px;
-  }
   p.slider-carousel-text,
   p.slider-carousel-text.show-note {
     font-size: 13px;

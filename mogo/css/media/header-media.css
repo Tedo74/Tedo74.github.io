@@ -2,6 +2,14 @@
   .header {
     height: 500px;
   }
+  .main-info {
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-info {
+    top: 38%;
+  }
   .main-menu {
     display: block;
   }
@@ -11,7 +19,7 @@
   }
   .main-heading {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .main-heading::after {
@@ -38,15 +46,26 @@
     font-size: 16px;
     margin: 16px 0;
   }
+
+  button.header-button {
+    padding: 5px 10px;
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 768px) {
+  .carousel-info {
+    width: 20%;
+  }
+  .main-info {
+    top: 43%;
+  }
   .header {
     height: 340px;
   }
   .main-heading {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 1.6em;
+    margin-bottom: 44px;
   }
   .sub-title {
     margin-bottom: 10px;
@@ -60,26 +79,26 @@
     visibility: hidden;
     opacity: 0;
     transform: scaleY(0);
-    transform: translateY(-100px);
+    transform: translateY(-275px);
   }
   .main-menu.show-main-nav {
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
     transform: translateY(0);
-    transition: all 0.4s ease-in;
+    transition: all 0.5s ease-in;
   }
   .main-menu.hidde {
-    transition: all 0.4s ease-in;
+    transition: all 0.5s ease-in;
     opacity: 0;
     visibility: hidden;
     transform: scaleY(0);
-    transform: translateY(-100px);
+    transform: translateY(-275px);
   }
   .menus-wrapper {
     position: absolute;
-    top: 20px;
-    left: 110px;
+    top: 52px;
+    left: 16px;
   }
   .burger-menu {
     display: block;
@@ -99,14 +118,7 @@
   .indicator-text {
     font-size: 10px;
   }
-  button.header-button {
-    padding: 5px 0.5rem;
-    font-size: 9px;
-  }
 
-  .button-container {
-    margin-top: 2.5em;
-  }
   .carousel-container {
     height: 30px;
   }

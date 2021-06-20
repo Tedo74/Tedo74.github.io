@@ -1,21 +1,22 @@
 .brands {
   padding: 50px 0;
   background-color: #f8f8f8;
-  margin-top: 110px;
+  margin-top: 115px;
 }
 
+/* max width */
 .inner-brands {
   margin: 0 auto;
 }
 
+/* container */
 .brand-logo-container {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
 }
 
+/* item size */
 .brand-logo {
-  /* border: 1px solid red; */
   height: 150px;
   width: 150px;
 }

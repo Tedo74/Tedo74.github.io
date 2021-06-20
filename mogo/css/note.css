@@ -1,18 +1,26 @@
+/* ********************************************/
+/* most styles are apllied to slider carousel  */
+/* *******************************************/
+
 .note-carousel {
-  margin-top: 120px;
+  margin-top: 100px;
   height: 290px;
   background-color: #f8f8f8;
-}
-
-.note-carousel-inner {
-  /* border: 2px solid blue; */
-  height: 100%;
-  /* background-color: blue; */
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* max width */
+.note-carousel-inner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons */
 .fa-chevron-left,
 .fa-chevron-right {
   cursor: pointer;
@@ -22,6 +30,7 @@
   margin-right: 60px;
 }
 
+/* container */
 .note-carousel-content {
   height: 150px;
   display: flex;
@@ -29,6 +38,7 @@
   padding: 70px 20px;
   justify-content: space-between;
 }
+/* mobile buttons  */
 .note-small-nav {
   display: flex;
   align-items: center;
@@ -36,6 +46,7 @@
 .small-nav {
   display: none;
 }
+/* note image */
 .note-carousel-svg {
   flex-shrink: 0;
   width: 150px;
@@ -47,6 +58,7 @@
   justify-content: center;
   margin-right: 60px;
 }
+/* contains text and author */
 .note-text-container {
   position: relative;
   width: 100%;
@@ -57,13 +69,14 @@
   justify-content: space-between;
   margin-right: 60px;
 }
+/* contains text */
 .note-paragraph-container {
-  /* height: 100%; */
   margin-bottom: 0px;
 }
+/* text styles */
 .note-carousel-text,
 .slider-carousel-text {
-  /* max-width: 767px; */
+  max-width: 767px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 300;
@@ -73,8 +86,9 @@
   color: #999999;
   opacity: 0;
   transition: opacity 0.4s linear;
-  /* transform: translateX(-500px); */
 }
+
+/* note author container */
 .note-carousel-text-author {
   width: 80%;
   display: flex;
@@ -89,26 +103,25 @@
   margin-right: 10px;
 }
 
+/* javascript add class .show-note */
 .note-carousel-text.show-note,
 .slider-carousel-text.show-note {
   transition: opacity 0.4s linear;
   opacity: 1;
-  /* transform: translateX(0); */
 }
 
 .note-author,
 .slider-author {
-  /* transform: translateX(500px); */
   transition: opacity 0.4s linear;
   opacity: 0;
 }
 .note-author.show-note,
 .slider-author.show-note {
-  /* transform: translateX(0); */
   transition: opacity 0.4s linear;
   opacity: 1;
 }
 
+/* author name text style */
 .note-sub {
   color: #333333;
   font-weight: 400;

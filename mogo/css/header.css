@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  /* height: 100vh; */
   height: 1000px;
   background-image: url('../assets/header-eagle.jpg');
   background-size: cover;
@@ -10,10 +9,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: var(--primary-color);
-}
-
+/* background image overlay */
 .header::before {
   position: absolute;
   content: '';
@@ -29,6 +25,7 @@ a {
   z-index: 1;
 }
 
+/* main content on top layer */
 .header-inner-box-container {
   position: absolute;
   top: 0%;
@@ -39,6 +36,7 @@ a {
   z-index: 2;
 }
 
+/* set max width inside header */
 .header-inner-content {
   height: 100%;
   margin: 0 auto;
@@ -47,9 +45,10 @@ a {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding-bottom: 0.8em;
+  padding-bottom: 19px;
 }
 
+/* site main navigation */
 .nav-container {
   margin-top: 28px;
   width: 100%;
@@ -76,11 +75,11 @@ a {
 }
 
 .main-nav ul li {
-  margin-right: 1.6em;
-  font-size: 14px;
+  margin-right: 20px;
+  font-size: 15px;
 }
 .main-nav a {
-  padding: 0.5em 1em;
+  padding: 0.5em 15px;
 }
 
 .main-nav a:hover {
@@ -96,7 +95,10 @@ a {
   bottom: -5px;
   left: 19%;
 }
+
+/* search and shop icons container */
 .search-shop {
+  margin-left: 8px;
   display: flex;
   justify-content: flex-end;
 }
@@ -114,15 +116,16 @@ a {
 }
 .shopping-card {
   margin-left: 0.3em;
-  margin-right: 47px;
+  margin-right: 50px;
 }
 
+/* main heading and buttons container */
 .main-info {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 211px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   z-index: 2;
 }
 
@@ -136,24 +139,27 @@ a {
   font-family: Montserrat;
   font-size: 150px;
   position: relative;
-  margin-bottom: 124px;
+  margin-bottom: 108px;
   padding: 0;
 }
 .main-heading.active {
   opacity: 1;
   transition: opacity 0.4s ease-in;
 }
+
+/* separator line after heading */
 .main-heading::after {
   content: '';
   width: 60px;
   height: 3px;
   background-color: var(--primary-color, #fff);
   position: absolute;
-  bottom: -71px;
+  bottom: -58px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+/* sub heading */
 .sub-title {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
@@ -165,22 +171,22 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 42px;
+  margin-bottom: 27px;
 }
+
 .button-container {
-  margin-top: 3.5em;
   position: relative;
   width: 100%;
-  height: 30px;
 }
 .header-button {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 
 button.header-button {
+  cursor: pointer;
   display: none;
   opacity: 0;
   transition: opacity 0.2s ease-in;
@@ -194,11 +200,13 @@ button.header-button {
   font-size: 14px;
   font-weight: bold;
 }
+
 button.header-button.active {
   display: block;
   transition: opacity 0.4s ease-in;
   opacity: 1;
 }
+
 button.header-button:hover {
   cursor: pointer;
 }
@@ -212,7 +220,7 @@ button.header-button:hover {
 }
 
 .carousel-info {
-  width: 20%;
+  width: 24%;
   height: 50px;
   cursor: pointer;
 }
@@ -276,7 +284,7 @@ button.header-button:hover {
   width: 100%;
   height: 3px;
   background-color: var(--primary-color);
-  margin-bottom: 0.8em;
+  margin-bottom: 19px;
 }
 .carousel-info p {
   opacity: 0.7;
@@ -291,12 +299,12 @@ button.header-button:hover {
 }
 .indicator-number {
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 18px;
   margin-right: 5px;
 }
 .indicator-text {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .burger-menu.burger-open {

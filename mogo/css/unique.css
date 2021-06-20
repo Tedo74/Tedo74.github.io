@@ -6,6 +6,7 @@
   position: relative;
 }
 
+/* overlay */
 .unique::before {
   position: absolute;
   content: '';
@@ -16,9 +17,13 @@
   background: rgba(255, 255, 255, 0.85);
   z-index: 1;
 }
+
+/* different margin bottom for section heading separator */
 .unique .heading-story::after {
-  bottom: -38px;
+  bottom: -39px;
 }
+
+/* tablet - overflow hidden */
 .unique-wrapper {
   width: 100%;
   height: 100%;
@@ -35,24 +40,28 @@
   z-index: 2;
 }
 
+/* tablet position */
 .unique-mobile,
 .unique-mobile-ghost {
   position: absolute;
-  top: 32%;
+  top: 268px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url('../assets/unique-phone.png');
   width: 477px;
   height: 582px;
   z-index: 1;
 }
+.unique-mobile {
+  background-image: url('../assets/unique-phone.png');
+}
+
 .unique-mobile-ghost {
   background: none;
-  /* border: 2px solid blue; */
   z-index: 3;
   height: 582px;
 }
 
+/* phone position */
 .unique-phone-over {
   position: absolute;
   background: url('../assets/white.png');

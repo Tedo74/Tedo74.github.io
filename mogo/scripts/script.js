@@ -36,10 +36,6 @@ function headerRemoveActive() {
 
 function headerSetActive(idx) {
   setTimeout(() => {
-    // carouselText.textContent = carouselTextArr[idx];
-    // carouselText.classList.add('active');
-    // carouselElements[idx].classList.add('active');
-    // carouselHeaderButtons[idx].classList.add('active');
     steps(idx);
   }, 600);
 }

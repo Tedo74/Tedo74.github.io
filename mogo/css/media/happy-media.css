@@ -3,6 +3,7 @@
     height: 1750px;
   }
 
+  /* container direction */
   .happy-users-container {
     display: flex;
     flex-direction: column;

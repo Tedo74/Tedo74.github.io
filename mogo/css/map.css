@@ -7,6 +7,7 @@
   position: relative;
 }
 
+/* background overlay */
 .map::before {
   position: absolute;
   content: '';
@@ -18,6 +19,7 @@
   z-index: 1;
 }
 
+/* content over */
 .map-content {
   height: 86px;
   position: absolute;
@@ -30,6 +32,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+/* content styles */
 .map-content i,
 .map-content a {
   color: var(--blush);

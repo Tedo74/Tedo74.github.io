@@ -1,22 +1,28 @@
+/* section text styles */
 .what .heading-sub {
-  margin-bottom: 23px;
+  margin-bottom: 10px;
 }
 
-.what-carousel {
-  margin: 0 auto;
-  display: flex;
-  margin-top: 92px;
-}
 .about-text.what-p {
+  padding-top: 3px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
+/* accordion container */
+.what-carousel {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 88px;
+}
+
+/* accordion img container */
 .what-carousel-img-container {
   width: 600px;
   height: 400px;
   position: relative;
 }
+/* accordion image position and size */
 .acc-photo {
   position: absolute;
   top: 0;
@@ -25,15 +31,19 @@
   right: 0;
   display: none;
 }
+
+/* JavaScript set active class */
 .acc-photo.active {
   display: block;
 }
 
+/* accordion size */
 .what-carousel-accordion {
   width: 600px;
   height: 400px;
 }
 
+/* accordion header style */
 .what-accordion-header {
   width: 600px;
   height: 60px;
@@ -41,6 +51,7 @@
   display: flex;
   align-items: center;
 }
+
 .accordion-header-img {
   width: 30px;
   height: 30px;
@@ -71,7 +82,6 @@
   margin: 15px;
   margin-left: auto;
   color: #cccccc;
-  /* cursor: pointer; */
 }
 
 .what-accordion-content {
@@ -85,6 +95,15 @@
   height: 90px;
   width: 5px;
 }
+/* scroll color */
+/* firefox */
+.what-accordion-content {
+  overflow-y: scroll;
+  scrollbar-color: #95e1d3 white;
+}
+
+/* scroll color */
+/* chrome */
 .what-accordion-content::-webkit-scrollbar-track {
   background: #f5f5f5;
 }
@@ -116,7 +135,6 @@
 }
 
 .accordion-item.active .what-accordion-content {
-  /* margin-bottom: 10px; */
   display: block;
 }
 

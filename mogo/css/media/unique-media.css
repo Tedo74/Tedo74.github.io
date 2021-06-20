@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .unique {
     height: 586px;
   }
@@ -10,12 +10,14 @@
     background-position: center center;
     top: 52%;
   }
+  /* new position for phone picture */
   .unique-phone-over {
     background-size: cover;
     background-position: center center;
     width: 137px;
     height: 238px;
     top: 48%;
+    left: 98%;
   }
 }
 @media (max-width: 400px) {

@@ -1,11 +1,17 @@
+const counterSection = document.querySelector('.about-counter');
 let counter1 = document.getElementById('counter-1');
 let counter2 = document.getElementById('counter-2');
 let counter3 = document.getElementById('counter-3');
 let counter4 = document.getElementById('counter-4');
 let counter5 = document.getElementById('counter-5');
 let countTime = 200;
+let executed = false;
 
-let counterInterval = setInterval(countAll, countTime);
+let counterInterval;
+
+function runCounter() {
+  counterInterval = setInterval(countAll, countTime);
+}
 
 let counterValue = 0;
 let counterValue2 = 0;
@@ -65,3 +71,20 @@ function count5() {
     }, 800);
   }
 }
+
+// Browser Intersection Observer API
+const callBackObs = function (entries) {
+  const entry = entries[0];
+  if (entry.isIntersecting && !executed) {
+    runCounter();
+    executed = true;
+  }
+};
+const optionsObs = {
+  // target null ==> viewport
+  root: null,
+  // 10% intersection
+  threshold: 0.6,
+};
+const observer = new IntersectionObserver(callBackObs, optionsObs);
+observer.observe(counterSection);

@@ -1,3 +1,4 @@
+// note
 const noteLeftBtn = document.getElementById('note-carousel-left-btn');
 const noteLeftBtn2 = document.getElementById('note-carousel-left-btn2');
 const noteRightBtn = document.getElementById('note-carousel-right-btn');
@@ -5,6 +6,7 @@ const noteRightBtn2 = document.getElementById('note-carousel-right-btn2');
 const noteText = document.querySelector('.note-carousel-text');
 const noteAuthor = document.querySelector('.note-author');
 
+// slider
 const sliderLeftBtn = document.getElementById('slider-carousel-left-btn');
 const sliderLeftBtn2 = document.getElementById('slider-carousel-left-btn2');
 const sliderRightBtn = document.getElementById('slider-carousel-right-btn');
@@ -12,8 +14,6 @@ const sliderRightBtn2 = document.getElementById('slider-carousel-right-btn2');
 const sliderText = document.querySelector('.slider-carousel-text');
 const sliderAuthor = document.querySelector('.slider-author');
 const sliderPicture = document.querySelector('.slider-img img');
-// console.log(noteLeftBtn2, noteRightBtn2);
-// console.log(sliderRightBtn2, sliderLeftBtn2);
 
 class Note {
   constructor(
@@ -144,6 +144,7 @@ class Note {
   }
 }
 
+// note instance
 const noteCarousel = new Note(
   [
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
@@ -159,6 +160,7 @@ const noteCarousel = new Note(
   noteAuthor
 );
 
+// slider instance
 const slider = new Note(
   [
     'Lorem Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
@@ -175,25 +177,3 @@ const slider = new Note(
   sliderPicture,
   ['assets/slider.jpg', 'assets/slider2.jpg', 'assets/slider3.jpg']
 );
-
-// slider.sliderChangeImage();
-
-// class Slider extends Note {
-//   constructor(
-//     textNoteArr,
-//     noteAutors,
-//     leftBtnDom,
-//     RightBtnDom,
-//     textDom,
-//     authorDom,
-//     pictureDom
-//   ) {
-//     super(textNoteArr, noteAutors, leftBtnDom, RightBtnDom, textDom, authorDom);
-//     this.img = pictureDom;
-//     picArray = [
-//       'assets/slider.jpg',
-//       'assets/slider2.jpg',
-//       'assets/slider3.jpg',
-//     ];
-//   }
-// }

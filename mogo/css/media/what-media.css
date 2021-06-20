@@ -1,4 +1,5 @@
 @media (max-width: 1280px) {
+  /* accordion container direction */
   .what-carousel {
     flex-direction: column;
     align-items: center;
