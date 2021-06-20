@@ -6,11 +6,18 @@
   padding: 100px 0 130px 0;
   background-color: var(--primary-color);
 }
+.note-carousel-content.slider-content {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  padding: 70px 20px;
+  justify-content: space-between;
+}
 
 .slider-img {
   flex-shrink: 0;
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 210px;
   margin-right: 60px;
 }
 

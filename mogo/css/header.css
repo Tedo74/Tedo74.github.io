@@ -50,7 +50,7 @@
 
 /* site main navigation */
 .nav-container {
-  margin-top: 28px;
+  margin-top: 26px;
   width: 100%;
   display: flex;
   align-items: baseline;
@@ -186,19 +186,25 @@
 }
 
 button.header-button {
+  width: 160px;
+  height: 40px;
   cursor: pointer;
   display: none;
   opacity: 0;
   transition: opacity 0.2s ease-in;
   border: none;
   outline: none;
-  padding: 12px 30px;
-  color: #fff;
+  /* padding: 12px 30px; */
   border: solid 3px #fff;
   background-color: transparent;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
 }
 
 button.header-button.active {
