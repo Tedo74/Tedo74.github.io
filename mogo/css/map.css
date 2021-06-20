@@ -41,7 +41,7 @@
 }
 .map-content i {
   font-size: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .map-heading {
@@ -60,5 +60,5 @@
   width: 60px;
   height: 3px;
   background-color: var(--blush);
-  margin-top: 21px;
+  margin-top: 17px;
 }

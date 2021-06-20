@@ -1,4 +1,7 @@
 @media (max-width: 800px) {
+  .examples-container {
+    padding: 1em 0;
+  }
   .example-over-content h6 {
     font-size: 10px;
   }
