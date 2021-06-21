@@ -1,5 +1,5 @@
 /* ************************* */
-/* use styles from note.css  */
+/* some styles from note.css  */
 /* ************************* */
 
 .slider {
@@ -18,7 +18,11 @@
   flex-shrink: 0;
   width: 210px;
   height: 210px;
-  margin-right: 60px;
+  margin-right: 31px;
+}
+
+#slider-carousel-left-btn {
+  margin-right: 43px;
 }
 
 .slider-img img {

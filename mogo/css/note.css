@@ -1,6 +1,6 @@
 /* ********************************************/
-/* most styles are apllied to slider carousel  */
-/* *******************************************/
+/* some styles are apllied to slider carousel */
+/* ********************************************/
 
 .note-carousel {
   margin-top: 100px;
@@ -25,9 +25,10 @@
 .fa-chevron-right {
   cursor: pointer;
   color: #cccccc;
+  font-size: 22px;
 }
 .fa-chevron-left {
-  margin-right: 60px;
+  margin-right: 74px;
 }
 
 /* container */
@@ -67,7 +68,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-right: 60px;
+  margin-right: 75px;
 }
 /* contains text */
 .note-paragraph-container {
