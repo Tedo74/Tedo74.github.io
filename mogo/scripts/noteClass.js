@@ -61,7 +61,7 @@ class Note {
       this.noteRightClick();
     });
     this.noteLeftBtn2.addEventListener('click', () => {
-      this.noteRightClick();
+      this.noteLeftClick();
     });
     this.noteRightBtn2.addEventListener('click', () => {
       this.noteRightClick();
@@ -87,9 +87,9 @@ class Note {
     }
   }
   noteLeftClick() {
+    this.noteRemoveText();
     this.resetNoteInterval();
     this.subToNoteIndex();
-    this.noteRemoveText();
     this.noteSetText();
     this.noteShowText();
     if (this.img) {
