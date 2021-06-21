@@ -83,7 +83,7 @@ const callBackObs = function (entries) {
 const optionsObs = {
   // target null ==> viewport
   root: null,
-  // 10% intersection
+  // 40% intersection
   threshold: 0.4,
 };
 const observer = new IntersectionObserver(callBackObs, optionsObs);
