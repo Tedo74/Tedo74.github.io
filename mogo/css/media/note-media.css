@@ -26,6 +26,14 @@
     display: block;
   }
 
+  /* bigger buttons */
+  .fa-chevron-left,
+  .fa-chevron-right {
+    cursor: pointer;
+    color: #cccccc;
+    font-size: 40px;
+  }
+
   .note-text-container {
     max-width: 395px;
     height: 130px;
