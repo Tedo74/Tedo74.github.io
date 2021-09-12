@@ -88,8 +88,8 @@ a:hover {
 }
 
 .personal-details {
-  margin: 1rem;
-  font-size: 1.2em;
+  margin: 0.3rem 0.7rem;
+  font-size: 0.9em;
   color: var(--pimary-text-color);
 }
 
@@ -107,7 +107,7 @@ a:hover {
   flex-direction: column;
 }
 .contact-item > a {
-  margin: 0.5em;
+  margin: 0.3em 0.5em;
   display: flex;
   align-items: center;
 }
