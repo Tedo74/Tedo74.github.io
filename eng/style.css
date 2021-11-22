@@ -10,10 +10,6 @@
   visibility: visible;
 }
 
-.heading:first-child {
-  margin-top: 1.8em;
-}
-
 .forms-wrapper {
   margin: 0 auto;
   width: 300px;
