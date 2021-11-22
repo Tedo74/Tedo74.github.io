@@ -54,6 +54,9 @@ const verbs = [
   ['forgive', 'forgave', 'forgiven'],
   ['freeze', 'froze', 'frozen'],
   ['get', 'got', 'got'],
+  ['give', 'gave', 'given'],
+  ['go', 'went', 'gone'],
+  ['grow', 'grew', 'grown'],
 ];
 
 function clearVerbs() {
