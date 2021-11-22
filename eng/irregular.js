@@ -32,7 +32,7 @@ const verbs = [
   ['burn', 'burnt', 'burnt'],
   ['buy', 'bought', 'bought'],
   ['catch', 'caught', 'caught'],
-  ['choose', 'chose', 'chose'],
+  ['choose', 'chose', 'chosen'],
   ['come', 'came', 'come'],
   ['cost', 'cost', 'cost'],
   ['cut', 'cut', 'cut'],
