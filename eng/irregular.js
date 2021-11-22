@@ -21,7 +21,8 @@ let checked = 'false';
 
 const verbs = [
   ['be', 'was', 'been'],
-  ['beat', 'became', 'become'],
+  ['beat', 'beat', 'beaten'],
+  ['become', 'became', 'become'],
   ['begin', 'began', 'begun'],
   ['bend', 'bent', 'bent'],
   ['bite', 'bit', 'bitten'],
