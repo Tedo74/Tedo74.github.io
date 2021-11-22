@@ -5,10 +5,13 @@
 }
 
 .heading {
-  margin-top: 1.8em;
   text-align: center;
   color: #010158;
   visibility: visible;
+}
+
+.heading:first-child {
+  margin-top: 1.8em;
 }
 
 .forms-wrapper {
