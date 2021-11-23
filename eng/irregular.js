@@ -139,7 +139,10 @@ function check() {
 
   if (all && !checked) {
     message.classList.remove('hide');
-    setTimeout(() => message.classList.add('hide'), 1000);
+    setTimeout(() => {
+      message.classList.add('hide');
+      setVerbToInput();
+    }, 1000);
   } else {
     message.classList.add('hide');
   }
