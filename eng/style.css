@@ -98,3 +98,38 @@ input.wrong {
 .heading.hide {
   visibility: hidden;
 }
+
+@media (max-width: 400px) {
+  .forms-wrapper {
+    width: 280px;
+    padding: 1em;
+    padding-top: 0.3em;
+    background-color: #dcdcff;
+    position: relative;
+  }
+
+  .input-wrapper input {
+    width: 100%;
+    padding: 0.4em 0.6em;
+    color: #010158;
+    border: 1px solid #010158;
+    border-radius: 3px;
+    font-size: 0.8em;
+  }
+
+  input-wrapper {
+    margin: 0.2em 0.6em;
+  }
+
+  .forms-wrapper .buttons {
+    margin: 0.2em 0.2em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .forms-wrapper .buttons button {
+    font-size: 0.8em;
+  }
+}
