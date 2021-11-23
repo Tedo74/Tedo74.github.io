@@ -57,6 +57,20 @@ const verbs = [
   ['give', 'gave', 'given'],
   ['go', 'went', 'gone'],
   ['grow', 'grew', 'grown'],
+  ['hang', 'hung', 'hung'],
+  ['have', 'had', 'had'],
+  ['hear', 'heard', 'heard'],
+  ['hide', 'hid', 'hidden'],
+  ['hit', 'hit', 'hit'],
+  ['hold', 'held', 'held'],
+  ['hurt', 'hurt', 'hurt'],
+  ['keep', 'kept', 'kept'],
+  ['know', 'knew', 'known'],
+  ['lay', 'laid', 'laid'],
+  ['lead', 'led', 'led'],
+  ['learn', 'learnt', 'learnt'],
+  ['leave', 'left', 'left'],
+  ['lend', 'lent', 'lent'],
 ];
 
 function clearVerbs() {
