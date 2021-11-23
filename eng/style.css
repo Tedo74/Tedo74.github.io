@@ -20,7 +20,25 @@
   border: 1px solid #010158;
   border-radius: 3px;
   padding: 1.6em;
+  padding-top: 0.5em;
   background-color: #dcdcff;
+  position: relative;
+}
+
+.message {
+  background-color: #010158;
+  color: white;
+  padding: 1em 1.3em;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  display: block;
+}
+
+.message.hide {
+  display: none;
 }
 
 .input-wrapper {
@@ -29,11 +47,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 1em;
+  margin: 0.5em 1em;
 }
 
 .input-wrapper input {
-  width: 95%;
+  width: 100%;
   padding: 0.5em 0.8em;
   color: #010158;
   border: 1px solid #010158;
@@ -43,7 +61,7 @@
 
 .input-wrapper label {
   display: block;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
   color: #010158;
 }
 

@@ -14,7 +14,7 @@ inputs.forEach((i) =>
 document.getElementById('changeVerb').addEventListener('click', setVerbToInput);
 document.getElementById('solution').addEventListener('click', showSolution);
 document.getElementById('check').addEventListener('click', check);
-const congrats = document.querySelector('.congrats');
+const message = document.querySelector('.message');
 
 let verb = [];
 let checked = 'false';
@@ -76,7 +76,7 @@ function getForm() {
 }
 
 function setVerbToInput() {
-  congrats.classList.add('hide');
+  message.classList.add('hide');
   checked = false;
   clearVerbs();
   verb = verbs[getVerb()];
@@ -124,9 +124,10 @@ function check() {
   }
 
   if (all && !checked) {
-    congrats.classList.remove('hide');
+    message.classList.remove('hide');
+    setTimeout(() => message.classList.add('hide'), 1000);
   } else {
-    congrats.classList.add('hide');
+    message.classList.add('hide');
   }
 }
 
